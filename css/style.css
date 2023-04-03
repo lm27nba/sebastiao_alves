@@ -215,6 +215,7 @@
     border-radius: 0 !important;
     box-shadow: 2px 2px 10px -5px #707070;
     margin-bottom: -15px;
+    width: 20rem;   
 }
 
 /* ZONAS GERAIS */
@@ -414,6 +415,11 @@
         margin: 42px 0px 60px 0px;
         row-gap: 0px;
         gap: 60px;
+    }
+
+    .card{
+        /* Destaques - Encolher um pouco o tamanho do card */
+        width: 18rem;
     }
     
     .card-text{
