@@ -1,0 +1,489 @@
+/* ZONA DO TITULO DO SITE */
+
+#nav-titulo{
+    /* A primeira margem do site */
+    width: 100%;
+    margin-top: 52px;
+    position: absolute;
+    top: 0;
+}
+
+.divisoria, .divisoria-footer, .divisoria-footer-dois{
+    /* Configurações da linha divisória do titulo para a nav-bar */
+    border-bottom: 1px solid #707070;
+    margin: 10px 0px;
+}
+
+/* ZONA DA NAV-BAR */
+
+.navbar{
+    /* Configurações da nav-bar */
+    background-color: transparent !important;
+}
+
+.nav-item > .active{
+    /* Nav-bar - Item selecionado */
+    color: #b47d33 !important;
+}
+
+.dropdown-menu{
+    /* Nav-bar - Caixa dos sub-menus */
+    padding: 25px 30px 20px 30px;
+    border: none;
+    border-radius: 0px !important;
+    box-shadow: 0px 0px 10px -5px #707070;
+}
+
+.dropdown-item{
+    /* Nav-bar - Submenus */
+    background-color: transparent !important;
+    margin-bottom: 5px;
+}
+
+.dropdown-item:hover{
+    /* Nav-bar - Submenus com o rato por cima */
+    color: #b17e3b !important;
+}
+
+/* ZONA DO CAROUSEL */
+
+#banners{
+    /* Carousel - Puxar o carousel para trás */
+    z-index: 0 !important;
+}
+
+.carousel-inner{
+    /* Carousel - Tamanho do ecrã e disfarçar as laterais */
+    width: 100%; 
+    height: auto;
+    background-image: linear-gradient( #dcdcdc, #dedede, #d0d0d0);
+}
+
+.imagem{
+    /* Carousel - Definir o funcionamento do banner em relação às medidas */
+    width: 100%;
+    height: auto;
+    max-height: 730px;
+}
+
+.carousel-caption{
+    /* Carousel - Definir o posicionamento das legendas */
+    top: 38%;
+    right: 15%;
+    bottom: 20px;
+    width: 37.5%;
+    height: auto;
+    padding: 0px;
+    text-align: left;
+}
+
+.banner-novidade, .banner-novidade-vazio, .banner-titulo, .banner-texto{
+    /* Carousel - Definir a margem dos campos em relação aos outros */
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.banner-novidade-vazio{
+    /* Carousel - Definir o espaço que ocupa a posição da novidade quando não há */
+    height: 20px;
+}
+
+.carousel-indicators{
+    /* Carousel - Posicionar os indicadores */
+    top: 84%;
+    width: 350px;
+    height:20px;
+}
+
+.carousel-indicators > button{ 
+    /* Carousel - Bolinhas para transição de banners */
+    border: 1px solid #4d4d4d !important;
+    background-color: transparent !important;
+    margin-right: 16px !important;
+    border-radius: 50% !important;
+    height: 18px !important;
+    width: 18px !important; 
+}
+
+.carousel-indicators > button.active{
+    /* Carousel - Bolinhas para transição de banners em modo ativo */
+    background-color: #4d4d4d !important;
+    border: none !important;
+    height: 20px !important;
+    width: 20px !important;
+}
+
+/* ZONA DA CAIXA DE BOAS-VINDAS */
+
+#caixa{
+    /* Boas-vindas - Definir propriedades gerais da caixa */
+    margin-top: -45px;
+    height: 538px;
+    z-index: 50 !important;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px -5px #1d1d1d;
+}
+
+#esquerda{
+    /* Boas-vindas - Colocar a imagem na posição dela */
+    padding: 60px 35px 60px 60px !important;
+}
+
+#foto{
+    /* Boas-vindas - Sombrear a foto */
+    box-shadow: 2px 2px 10px -5px #1d1d1d;
+    height: 396px;
+    width: 312px;
+}
+
+#direita{
+    /* Boas-vindas - Encolher o texto na margem direita */
+    padding-right: 48px;
+}
+
+.bem-vindo-titulo{
+    /* Boas-vindas - Colocar o titulo na posição */
+    margin-top: 80px;
+}
+
+.bem-vindo-texto{
+    /* Boas-vindas - Colocar o texto na posição */
+    margin-top: 30px;
+}
+
+.bem-vindo-botao{
+    /* Boas-vindas - Colocar o botão na posição */
+    margin-top: 30px;
+    margin-bottom: 48px;
+}
+
+/* ZONA DOS ULTIMOS LIVROS */
+
+#zona-conteudo{
+    /* Conteudo - Afastar da outra caixa */
+    margin-top: 85px;
+}
+
+#texto-cont{
+    /* Conteudo - Centrar o texto deixando uma pequena margem */
+    margin: 15px;
+}
+
+.texto-conteudo{
+    /* Conteudo - Afastar os texto do titulo */
+    margin-top: 23px;
+}
+
+#destaques{
+    /* Destaques - Afastar os cards do resto do texto */
+    margin-top: 70px;
+    row-gap: 75px;
+}
+
+.card-title{
+    /* Destaques - Titulo do card */
+    margin-top: 12px !important;
+    font-size: 23px !important;
+}
+
+.card-category{
+    /* Destaques - Categoria do card */
+    margin-top: 10px !important;
+    text-transform: uppercase;
+    color: #b17e3b;
+}
+
+.card-text{
+    /* Destaques - Texto do card */
+    margin-top: 10px !important;
+}
+
+.card-img-top{
+    /* Destaques - Imagem do card */
+    height: 428px;
+    border-radius: 0px !important;
+}
+
+.card-button{
+    /* Destaques - Botão do card */
+    margin-top: 10px;
+}
+
+.card{
+    /* Destaques - Definições gerais do card */
+    border: none;
+    border-radius: 0 !important;
+    box-shadow: 2px 2px 10px -5px #707070;
+    margin-bottom: -15px;
+}
+
+/* ZONAS GERAIS */
+
+.btnsabermais{
+    /* Botão saber mais */
+    width: 120px;
+    height: 30px;
+    background-color: #b17e3b;
+    color: #fff;
+    border: none;
+}
+
+.btnsabermais:hover{
+    /* Botão saber mais quando em efeito hover */
+    background-color: #4d4d4d;
+}
+
+.divisoria-footer{
+    /* Linha separadora do footer - Afastar do outro conteúdo */
+    margin-top: 106px;
+}
+
+/* ZONA DO FOOTER */
+
+.nav-item-footer{
+    /* Nav-bar do footer - Dar a distância às duas linhas */
+    margin: 5.5px 0px;
+}
+
+.footer-esquerda, .footer-direita{
+    /* Nav-bar do footer - Dar a margem às caixas */
+    margin-top: 50px;
+}
+
+.contactos{
+    /* Nav-bar do footer - Dar a margem às caixas */
+    margin-top: 20px;
+}
+
+.morada > p, .telefone > p, .mail > p{
+    /* Nav-bar do footer - Dar a margem às caixas */
+    margin-top: 6px;
+}
+
+.reclamacoes{
+    /* Nav-bar do footer - Dar a margem às imagens */
+    margin-top: 58px;
+}
+
+.ralc{
+    /* Nav-bar do footer - Dar a margem às imagens */
+    margin-left: 43px;
+}
+
+.redes-sociais{
+    /* Nav-bar do footer - Dar a margem às caixas */
+    margin-top: 30px
+}
+
+.redes-sociais > a > img{
+    /* Nav-bar do footer - Dar a margem às imagens */
+    margin: 0px 10px;
+}
+
+.direitos{
+    /* Nav-bar do footer - Dar a margem às caixas */
+    margin-top: 88px;
+    padding-bottom: 70px;
+}
+
+/* MEDIA QUERY */
+
+@media all and (max-width: 768px){
+
+    /* ZONA DO TITULO DO SITE */
+
+    #nav-titulo{
+        /* Titulo - A primeira margem do site */
+        margin-top: 70px;
+    }
+
+    /* ZONA DA NAV-BAR */
+
+    .navbar{
+        /* Nav-bar - Para ocultar a linha divisória */
+        margin-top: -2px;
+    }
+
+    #navbarNavDropdown{
+        /* Nav-bar - Configurar a caixa do menu */
+        width: 100%;
+        background-color: #fff;
+        padding: 30px 40px !important;
+    }
+
+    .dropdown-menu{
+        /* Nav-bar - Para a caixa do submenu */
+        width: 80%;
+        margin: auto;
+    }
+
+    /* ZONA DO CAROUSEL */
+
+    .imagem{
+        /* Carousel - Ajuste no tamanho da imagem */
+        max-width: 360px;
+        margin: auto;
+    }
+
+    .carousel-caption{
+        /* Carousel - Definir o posicionamento das legendas */
+        top: 47%;
+        right: 15%;
+        left: 7.5%;
+        bottom: 20px;
+        width: 85%;
+        height: auto;
+        padding: 0px;
+        text-align: left;
+    }
+
+    .banner-novidade, .banner-novidade-vazio, .banner-titulo, .banner-texto{
+        /* Carousel - Definir a margem dos campos em relação aos outros */
+        margin-bottom: 10px;
+    }
+
+    .carousel-indicators{
+        /* Carousel - Posicionar os indicadores */
+        top: 90%;
+        left: -8.5%;
+        bottom: 50px;
+    }
+
+    /* ZONA DA CAIXA DE BOAS-VINDAS */
+
+    #caixa{
+        /* Boas-vindas - Re-colocar a caixa de boas-vindas em posição */
+        margin-top: 0px;
+        height: auto;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px -5px #1d1d1d;
+        display: flex;
+        justify-content: center;
+    }
+
+    #esquerda{
+        /* Boas-vindas - Colocar a imagem na posição dela */
+        padding: 73px 0px 0px 0px !important;
+    }
+
+    #foto{
+        /* Boas-vindas - Redimensionar a foto */
+        width: 286px;
+    }
+
+    #direita{
+        /* Boas-vindas - Encolher o texto na margem direita */
+        padding: 0px 15px;
+    }
+
+    .bem-vindo-titulo{
+        /* Boas-vindas - Colocar o titulo na posição */
+        margin-top: 35px;
+    }
+
+    .bem-vindo-texto{
+        /* Boas-vindas - Colocar o texto na posição */
+        margin-top: 20px;
+    }
+    
+    .bem-vindo-botao{
+        /* Boas-vindas - Colocar o botão na posição */
+        margin-top: 40px;
+        margin-bottom: 48px;
+    }
+
+    /* ZONA DOS ULTIMOS LIVROS */
+
+    #zona-conteudo{
+        /* Conteudo - Afastar da outra caixa */
+        margin-top: 40px;
+    }
+    
+    #texto-cont{
+        /* Conteudo - Centrar o texto deixando uma pequena margem */
+        margin: 15px;
+    }
+
+    .texto-conteudo{
+        /* Conteudo - Afastar os texto do titulo */
+        margin-top: 20px;
+    }
+
+    #destaques{
+        /* Destaques - Afastar os cards do resto do texto */
+        margin: 42px 0px 60px 0px;
+        row-gap: 0px;
+        gap: 60px;
+    }
+    
+    .card-text{
+        /* Destaques - Texto do card */
+        margin-top: 14px !important;
+    }
+
+    .card-button{
+        /* Destaques - Botão do card */
+        margin-top: 15px;
+    }
+
+    /* ZONAS GERAIS */
+
+    .btnsabermais{
+        /* Botão saber mais */
+        width: 101px;
+        height: 26px;
+    }
+
+    .divisoria-footer{
+        /* Linha separadora do footer - Afastar do outro conteúdo. */
+        margin: 60px 0px;
+    }
+
+    /* ZONA DO FOOTER */
+
+    .footer-esquerda{
+        /* Nav-bar do footer - Dar a margem às caixas */
+        margin-top: 0px;
+    }
+    
+    .contactos{
+        /* Nav-bar do footer - Dar a margem às caixas */
+        flex-direction: column;
+    }
+
+    .telefone, .mail{
+        /* Nav-bar do footer - Dar a margem às caixas */
+        margin-top: 20px;
+    }
+    
+    .morada > p, .telefone > p, .mail > p{
+        /* Nav-bar do footer - Dar a margem às caixas */
+        margin-top: 6px;
+    }
+
+    .footer-direita{
+        /* Nav-bar do footer - Dar a margem às caixas */
+        margin-top: 64px;
+    }
+    
+    .reclamacoes{
+        /* Nav-bar do footer - Dar a margem às imagens */
+        margin-top: 58px;
+    }
+    
+    .ralc{
+        /* Nav-bar do footer - Dar a margem às imagens */
+        margin-left: 43px;
+    }
+    
+    .redes-sociais > a > img{
+        /* Nav-bar do footer - Dar a margem às imagens */
+        margin: 0px 12.5px;
+    }
+    
+    .direitos{
+        /* Nav-bar do footer - Dar a margem às caixas */
+        margin-top: 43px;
+        padding-bottom: 60px;
+    }
+}
