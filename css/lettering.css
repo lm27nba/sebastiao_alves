@@ -157,16 +157,23 @@
     }
 
     .ST1{
-        /* Titulo por secções - No Footer as letras dos titulos parecem mais pequenas */
+        /* Pareceu-me que as letras no footer estão mais pequenas que o mencionado no word */
         font-size: 20px;
-        font-family: 'ibmplexmedium';
-        text-transform: uppercase;
-        color: #4d4d4d;
     }
 
     .T2{
         /* Titulo do Banner */
         font-size: 32px;
+    }
+
+    .T4{
+        /* Sub-titulo dos contactos */
+        font-size: 13px;
+    }
+
+    .P1{
+        /* Campos nos contactos */
+        font-size: 13px;
     }
 
 }
