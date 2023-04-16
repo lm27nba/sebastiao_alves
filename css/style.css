@@ -8,7 +8,7 @@
     top: 0;
 }
 
-.divisoria, .divisoria-footer, .divisoria-footer-dois{
+.divisoria, .divisoria-footer, .divisoria-footer-autor, .divisoria-footer-livros, .divisoria-footer-dois{
     /* Configurações da linha divisória do titulo para a nav-bar */
     border-bottom: 1px solid #707070;
     margin: 10px 0px;
@@ -21,7 +21,7 @@
     background-color: transparent !important;
 }
 
-.nav-item > .active{
+.nav-item > .active, .paginacao > .active{
     /* Nav-bar - Item selecionado */
     color: #b47d33 !important;
 }
@@ -157,7 +157,28 @@
     margin-bottom: 48px;
 }
 
-/* ZONA DOS ULTIMOS LIVROS */
+#caixa_autor{
+    /* Página Autor - Definir as propriedades gerais da caixa */
+    margin-top: -45px;
+    height: 130px;
+    z-index: 50 !important;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px -5px #1d1d1d;
+}
+
+.nome_autor, .nome_livros{
+    /* Página Autor - Definir as propriedades do titulo da página */
+    color: #b47d33;
+    margin: 50px auto auto 55px;
+}
+
+.subtitulo_autor, .subtitulo_livros{
+    /* Página Autor - Definir as propriedades do subtitulo da página */
+    font-family: 'ibmplexmedium';
+    margin-left: 55px;
+}
+
+/* ZONA DE CONTEUDO DAS PÁGINAS */
 
 #zona-conteudo{
     /* Conteudo - Afastar da outra caixa */
@@ -218,6 +239,56 @@
     width: 20rem;   
 }
 
+.imagem_autor, .area_livros{
+    /* Página autor e livros - Posicionar a imagem */
+    margin-top: 65px;
+}
+
+.texto_autor{
+    /* Página autor e livros - Posicionar o texto */
+    padding-left: 55px;
+}
+
+.livros{
+    padding: 0px 100px 55px 55px;
+    max-width: 460px;
+    max-height: 525px;
+}
+
+.texto-livros{
+    padding: 0px 57px 0px 55px;
+    text-align: left;
+    min-height: 435px;
+}
+
+.voltar-atras-livros{
+    text-align: right;
+}
+
+.btnvoltar{
+     /* Página autor - Posicionar o botão */
+     margin: 75px 0px 0px 43px;
+}
+
+.noticia1{
+    margin-top: 5px;
+    padding: 60px 80px 12px 80px;
+    box-shadow: 0px 10px 10px -15px #1d1d1d;
+}
+
+.noticia2{
+    padding: 80px;
+}
+
+.titulo-imprensa{
+    font-family: 'ibmplexmedium';
+}
+
+.separador-noticias{
+    border-bottom: 1px solid #A97339;
+    margin: 12px 0px;
+}
+
 /* ZONAS GERAIS */
 
 .btnsabermais{
@@ -232,6 +303,22 @@
 .btnsabermais:hover{
     /* Botão saber mais quando em efeito hover */
     background-color: #4d4d4d;
+}
+
+.btn-paginacao{
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 80px;
+}
+
+.divisoria-footer-autor{
+    margin-top: 75px;
+}
+
+.divisoria-footer-livros{
+    margin-top: 30px;
 }
 
 .divisoria-footer{
@@ -251,9 +338,21 @@
     margin-top: 50px;
 }
 
+.footer-esquerda, .reclamacoes{
+    padding-left: 40px;
+}
+
+.footer-direita, .direitos{
+    padding-right: 40px;
+}
+
 .contactos{
     /* Nav-bar do footer - Dar a margem às caixas */
     margin-top: 20px;
+}
+
+.titulo-contactos, .titulo-redes-sociais{
+    font-family: 'ibmplexmedium';
 }
 
 .morada > p, .telefone > p, .mail > p{
