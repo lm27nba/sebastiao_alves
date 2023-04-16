@@ -228,9 +228,9 @@
     margin-left: 55px;
 }
 
-.imagem_autor, .area_livros{
-    /* Página autor e livros - Posicionar a imagem */
-    margin-top: 65px;
+.imagem_autor{
+    /* Posicionar a imagem */
+    margin: 60px 0px 45px 0px;
 }
 
 .texto_autor{
@@ -239,6 +239,11 @@
 }
 
 /* PÁGINA LIVROS */
+
+.area_livros{
+    /* Posicionar a imagem */
+    margin-top: 65px;
+}
 
 .livros{
     /* Relativo à imagem do conteúdo da página */
@@ -337,10 +342,16 @@
 /* DIVISÕES DO FOOTER */
 
 .divisoria, .divisoria-footer, .divisoria-footer-autor, .divisoria-footer-livros,
-.divisoria-footer-imprensa, .divisoria-footer-dois, .divisoria-footer-contactos{
-    /* Configurações da linha divisória do titulo para a nav-bar */
+.divisoria-footer-imprensa, .divisoria-footer-contactos{
+    /* Configurações da linha divisória do titulo para a nav-bar e final das páginas a primeira linha */
     border-bottom: 1px solid #707070;
     margin-bottom: 10px;
+}
+
+.divisoria-footer-dois{
+    /* Configurações da segunda linha divisória do nav-bar para o footer */
+    border-bottom: 1px solid #707070;
+    margin-top: 10px;
 }
 
 .divisoria-footer-autor{
