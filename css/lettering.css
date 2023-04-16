@@ -37,7 +37,7 @@
 
 .T1{
     /* Titulo por secções */
-    font-family: 'ibmplexbold';
+    font-family: 'ibmplexmedium';
     font-size: 25px;
     text-transform: uppercase;
     color: #4d4d4d;
@@ -154,6 +154,14 @@
     .T1{
         /* Titulo por secções */
         font-size: 22px;
+    }
+
+    .ST1{
+        /* Titulo por secções - No Footer as letras dos titulos parecem mais pequenas */
+        font-size: 20px;
+        font-family: 'ibmplexmedium';
+        text-transform: uppercase;
+        color: #4d4d4d;
     }
 
     .T2{

@@ -87,6 +87,7 @@
     top: 84%;
     width: 350px;
     height:20px;
+    width: 50%;
 }
 
 .carousel-indicators > button{ 
@@ -201,7 +202,7 @@
     /* Destaques - Definições gerais do card */
     border: none;
     border-radius: 0 !important;
-    box-shadow: 2px 2px 10px -5px #707070;
+    box-shadow: 5px 5px 8px -8px #707070;
     width: 20rem;   
 }
 
@@ -224,7 +225,6 @@
 
 .subtitulo_autor, .subtitulo_livros{
     /* Definir as propriedades do subtitulo da página */
-    font-family: 'ibmplexmedium';
     margin-left: 55px;
 }
 
@@ -271,11 +271,6 @@
 .noticia2{
     /* Colocação da caixa da segunda noticia */
     padding: 80px 80px 12px 80px;
-}
-
-.titulo-imprensa{
-    /* Tipo de letra parecia diferente ao do texto das diretrizes */
-    font-family: 'ibmplexmedium';
 }
 
 .separador-noticias{
@@ -401,11 +396,6 @@
     margin-top: 20px;
 }
 
-.titulo-contactos, .titulo-redes-sociais{
-    /* Footer - Achei que o tipo de letra não coincidia com a imagem */
-    font-family: 'ibmplexmedium';
-}
-
 .texto-contactos{
     /* Footer - Dar a margem às caixas */
     margin-top: 6px;
@@ -495,9 +485,10 @@
 
     .carousel-indicators{
         /* Carousel - Posicionar os indicadores */
-        top: 90%;
+        top: 94%;
         left: -8.5%;
         bottom: 50px;
+        width: 50%;
     }
 
     /* ZONA DA CAIXA DE BOAS-VINDAS */
@@ -514,7 +505,7 @@
 
     #esquerda{
         /* Boas-vindas - Colocar a imagem na posição dela */
-        padding: 73px 0px 0px 0px !important;
+        padding: 60px 0px 0px 0px !important;
     }
 
     #foto{
@@ -529,17 +520,17 @@
 
     .bem-vindo-titulo{
         /* Boas-vindas - Colocar o titulo na posição */
-        margin-top: 35px;
+        margin-top: 50px;
     }
 
     .bem-vindo-texto{
         /* Boas-vindas - Colocar o texto na posição */
-        margin-top: 20px;
+        margin-top: 15px;
     }
     
     .bem-vindo-botao{
         /* Boas-vindas - Colocar o botão na posição */
-        margin-top: 40px;
+        margin-top: 30px;
         margin-bottom: 48px;
     }
 
@@ -547,7 +538,7 @@
 
     #zona-conteudo{
         /* Conteudo - Afastar da outra caixa */
-        margin-top: 40px;
+        margin-top: 73px;
     }
     
     #texto-cont{
@@ -562,7 +553,7 @@
 
     #destaques{
         /* Destaques - Afastar os cards do resto do texto */
-        margin: 42px 0px 60px 0px;
+        margin: 42px 0px 0px 0px;
         row-gap: 0px;
         gap: 60px;
     }
@@ -574,12 +565,12 @@
     
     .card-text{
         /* Destaques - Texto do card */
-        margin-top: 14px !important;
+        margin-top: 12px !important;
     }
 
     .card-button{
         /* Destaques - Botão do card */
-        margin-top: 15px;
+        margin: 15px 0px 10px 0px;
     }
 
     /* ZONAS GERAIS */
@@ -615,6 +606,16 @@
     .texto-contactos{
         /* Footer - Dar a margem às caixas */
         margin-top: 6px;
+    }
+
+    .footer-esquerda, .reclamacoes{
+        /* Footer - Colocação das caixas */
+        padding-left: 0px;
+    }
+    
+    .footer-direita, .direitos{
+        /* Footer - Colocação das caixas */
+        padding-right: 0px;
     }
 
     .footer-direita{
