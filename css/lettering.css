@@ -1,3 +1,6 @@
+/* *************************************************************************************************************** */
+                                /* CRIAÇÃO DOS DIVERSOS TIPOS DE LETRAS */
+
 @font-face {
     font-family: "latoblack";
     src: url(..//fonts//lato-black.ttf);
@@ -23,9 +26,10 @@
     src: url(..//fonts//IBMPlexSans-Medium.ttf);
 }
 
-/* DIVERSOS TIPOS DE FONTES SOLICITADAS */
+/* *************************************************************************************************************** */
+                                    /* DIVERSOS TIPOS DE FONTES SOLICITADAS */
 
-/* GERAIS */
+                                                /* GERAIS */
 
 .T0{
     /* Titulo principal */
@@ -43,6 +47,14 @@
     color: #4d4d4d;
 } 
 
+.FT1{
+    /* Pareceu-me que as letras no footer estão mais pequenas que o mencionado no word */
+    font-family: 'ibmplexmedium';
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #4d4d4d;
+}
+
 .P0{
     /* Textos gerais */
     font-family: 'ibmplexlight';
@@ -58,7 +70,8 @@
     margin-top: 5px;
 }
 
-/* BARRAS DE NAVEGAÇÃO */
+/* *************************************************************************************************************** */
+                                            /* BARRAS DE NAVEGAÇÃO */
 
 .M0{
     /* Menus da barra de rodapé */
@@ -87,7 +100,8 @@
     color: #4d4d4d;
 } 
 
-/* "BANNER" */
+/* *************************************************************************************************************** */
+                                                /* "BANNER" */
 
 .T2{
     /* Titulo do Banner */
@@ -107,7 +121,8 @@
 
 /* -> No Banner os textos têm a class "P" <- */
 
-/* DESTAQUES PAGINA HOME */
+/* *************************************************************************************************************** */
+                                            /* DESTAQUES PAGINA HOME */
 
 .T3{
     /* Titulo dos "cards" dos Destaques */
@@ -134,7 +149,15 @@
     color: #4d4d4d;
 }
 
-/* IMPRENSA */
+/* *************************************************************************************************************** */
+                                                    /* IMPRENSA */
+
+.Pag1{
+   /* Estilo de letras da paginação */ 
+   font-family: 'ibmplexmedium';
+   color: #4d4d4d;
+   font-size: 23px;
+}
 
 .P2{
     /* Data da publicação */
@@ -143,6 +166,9 @@
     text-transform: uppercase;
     color: #4d4d4d;
 } 
+
+/* *************************************************************************************************************** */
+                                                    /* MEDIA QUERY'S */
 
 @media all and (max-width: 768px){
 
@@ -154,11 +180,6 @@
     .T1{
         /* Titulo por secções */
         font-size: 22px;
-    }
-
-    .ST1{
-        /* Pareceu-me que as letras no footer estão mais pequenas que o mencionado no word */
-        font-size: 20px;
     }
 
     .T2{
