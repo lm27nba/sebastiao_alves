@@ -47,6 +47,14 @@
     color: #4d4d4d;
 } 
 
+.T1Esp{
+    /* Titulo por secções */
+    font-family: 'ibmplexmedium';
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #4d4d4d;
+} 
+
 .FT1{
     /* Pareceu-me que as letras no footer estão mais pequenas que o mencionado no word */
     font-family: 'ibmplexmedium';
@@ -170,21 +178,32 @@
 /* *************************************************************************************************************** */
                                                     /* MEDIA QUERY'S */
 
+
 @media all and (max-width: 768px){
 
     .T0{
         /* Titulo principal */
-        font-size: 25px;
+        font-size: 26px;
     } 
 
     .T1{
         /* Titulo por secções */
-        font-size: 22px;
+        font-size: 23px;
+    }
+
+    .T1Esp{
+        /* Titulo por secções */
+        font-size: 21px;
     }
 
     .T2{
         /* Titulo do Banner */
         font-size: 32px;
+    }
+
+    .P0{
+        /* Texto do Banner */
+        font-size: 13px;
     }
 
     .T4{
@@ -195,6 +214,54 @@
     .P1{
         /* Campos nos contactos */
         font-size: 13px;
+    }
+
+    .N0{
+        /* Novidade */
+        font-size: 15px;
+    }
+
+}
+@media all and (max-width: 450px){
+
+    .T0{
+        /* Titulo principal */
+        font-size: 23px;
+    } 
+
+    .T1{
+        /* Titulo por secções */
+        font-size: 21px;
+    }
+
+    .T1Esp{
+        /* Titulo por secções */
+        font-size: 20px;
+    }
+
+    .T2{
+        /* Titulo do Banner */
+        font-size: 28px;
+    }
+
+    .P0{
+        /* Texto do Banner */
+        font-size: 12px;
+    }
+
+    .T4{
+        /* Sub-titulo dos contactos */
+        font-size: 13px;
+    }
+
+    .P1{
+        /* Campos nos contactos */
+        font-size: 13px;
+    }
+
+    .N0{
+        /* Novidade */
+        font-size: 14px;
     }
 
 }
