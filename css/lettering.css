@@ -103,6 +103,13 @@
 
 .SM0{
     /* Sub-menus da barra de navegação */
+    font-family: 'latobold';
+    font-size: 13px;
+    color: #4d4d4d;
+} 
+
+.SM1{
+    /* Sub-menus da barra de navegação */
     font-family: 'ibmplexmedium';
     font-size: 13px;
     color: #4d4d4d;
@@ -121,7 +128,8 @@
 
 .N0{
     /* Novidade */
-    font-family: 'ibmplexmedium';
+    font-family: 'latobold';
+    letter-spacing: 1.2px;
     font-size: 13px;
     text-transform: uppercase;
     color: #b17e3b !important;
@@ -188,7 +196,7 @@
 
     .T1{
         /* Titulo por secções */
-        font-size: 23px;
+        font-size: 22px;
     }
 
     .T1Esp{
@@ -236,7 +244,7 @@
 
     .T1Esp{
         /* Titulo por secções */
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .T2{
