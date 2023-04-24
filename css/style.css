@@ -212,8 +212,9 @@
 
 #caixa_autor{
     /* Definir as propriedades gerais da caixa */
-    margin: -45px 0px 0px 0px;
+    margin-top: -45px;
     min-height: 130px; 
+    max-width: 91.666%;
     z-index: 50 !important;
     background-color: #fff;
     box-shadow: 5px 3px 10px -8px #1d1d1d;
@@ -235,9 +236,15 @@
     margin: 60px 0px 45px 0px;
 }
 
+#foto-autor{
+    /* Dimensionar a imagem */
+    max-width: 510px;
+    max-height: 345px;
+}
+
 .texto_autor{
     /* Página autor e livros - Posicionar o texto */
-    padding-left: 55px;
+    padding-left: 43px !important;
 }
 
 /* *************************************************************************************************************** */
@@ -250,16 +257,16 @@
 
 .livros{
     /* Relativo à imagem do conteúdo da página */
-    padding: 0px 100px 55px 55px;
-    max-width: 460px;
-    max-height: 525px;
+    padding: 0px 100px 55px 55px !important;
+    max-width: 460px !important;
+    max-height: 525px !important;
 }
 
 .texto-livros{
     /* Relativo aos textos do conteúdo da página */
-    padding: 0px 57px 0px 55px;
-    text-align: left;
-    min-height: 435px;
+    padding: 0px 57px 0px 55px !important;
+    text-align: left !important;
+    min-height: 435px !important;
 }
 
 /* *************************************************************************************************************** */
@@ -269,6 +276,9 @@
     /* Colocação da caixa da primeira noticia e sombreado da caixa */
     margin-top: 5px;
     padding: 60px 80px 12px 80px;
+}
+
+.area_imprensa{
     box-shadow: 0px 10px 10px -15px #1d1d1d;
 }
 
@@ -285,7 +295,6 @@
 
 .paginas{
     margin: 0px 30px;
-    width: 150px;
 }
 
 .paginas > .active{
@@ -347,7 +356,7 @@
     background-color: transparent;
     width: 17px;
     height: 30px;
-    margin: 80px 0px 80px 0px;
+    margin: 80px 0px;
 }
 
 /* *************************************************************************************************************** */
@@ -475,6 +484,25 @@
     .subtitulo_autor, .subtitulo_livros{
         margin: 10px 0px 14px 10px;
     }
+
+/* *************************************************************************************************************** */
+                                  /* PAGINA DOS LIVROS - MENOR QUE 991 PX */
+
+    .livros{
+        /* Relativo à imagem do conteúdo da página */
+        padding: 0px 0px 55px 0px !important;
+    }
+    
+    .texto-livros{
+        /* Relativo aos textos do conteúdo da página */
+        padding: 0px !important;
+    }
+
+    .voltar-atras-livros{
+        /* Botão voltar atrás da página livros */
+        text-align: center;
+        margin-top: 44px;
+    }
     
 }
 
@@ -545,8 +573,9 @@
 
     #caixa_autor{
         /* Boas-vindas - Re-colocar a caixa de titulo em posição */
-        margin-top: 0px;      
+        margin: 0px;      
         height: auto;
+        max-width: none;
         background-color: #fff;
         box-shadow: 0px 3px 8px -5px #1d1d1d !important;
     }    
@@ -636,6 +665,14 @@
         height: 26px;
     }
 
+    .btnvoltar{
+        margin: 59px 0px 0px 0px;
+    }
+
+    .btn-paginacao{
+        margin: 32px 0px 0px 0px;
+    }
+
     .divisoria-footer{
         /* Linha separadora do footer - Afastar do outro conteúdo. */
         margin: 60px 0px;
@@ -702,24 +739,33 @@
 }
 
 /* *************************************************************************************************************** */
-                            /* ZONA CAIXA DO TITULO - PAGINAS DIVERSAS - MENOR QUE 768 PX */
+                            /* PAGINAS DIVERSAS - MENOR QUE 768 PX */
 
-    .imagem_autor{
+    #foto-autor{
         /* Redimensionar a imagem */
-        width: 75% !important;
+        width: 91% !important;
         height: auto;
     }
     
-    .texto_autor{
+    .texto_autor,.imagem_autor{
         /* Página autor e livros - Posicionar o texto */
-        padding-left: 55px;
+        padding-left: 0px !important;
+    }
+
+    .noticia1, .noticia2{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .separador-noticias{
+        margin:0px;
     }
                             
 
-@media all and (max-width: 450px){
+@media all and (max-width: 500px){
 
 /* *************************************************************************************************************** */
-                                   /* ZONA DO CAROUSEL - MENOR QUE 450 PX */
+                                   /* ZONA DO CAROUSEL - MENOR QUE 500 PX */
 
 
     .carousel-caption{
@@ -734,7 +780,7 @@
     }
 
 /* *************************************************************************************************************** */
-                             /* ZONA DA CAIXA DE BOAS-VINDAS - MENOR QUE 450 PX */
+                             /* ZONA DA CAIXA DE BOAS-VINDAS - MENOR QUE 500 PX */
 
     #foto{
     /* Boas-vindas - Redimensionar a foto */
@@ -742,7 +788,7 @@
 }
 
 /* *************************************************************************************************************** */
-                                /* ZONA DOS ULTIMOS LIVROS - MENOR QUE 450 PX */
+                                /* ZONA DOS ULTIMOS LIVROS - MENOR QUE 500 PX */
 
     .card{
     /* Destaques - Encolher um pouco o tamanho do card */

@@ -130,7 +130,7 @@
     /* Novidade */
     font-family: 'latobold';
     letter-spacing: 1.2px;
-    font-size: 13px;
+    font-size: 15px;
     text-transform: uppercase;
     color: #b17e3b !important;
 }
@@ -186,6 +186,18 @@
 /* *************************************************************************************************************** */
                                                     /* MEDIA QUERY'S */
 
+@media all and (max-width: 768px){
+    
+    .T4{
+        /* Sub-titulo dos contactos */
+        font-size: 14px;
+    }
+
+    .P1{
+        /* Campos nos contactos */
+        font-size: 14px;
+    }
+}
 
 @media all and (max-width: 768px){
 
@@ -214,23 +226,13 @@
         font-size: 13px;
     }
 
-    .T4{
-        /* Sub-titulo dos contactos */
-        font-size: 13px;
-    }
-
-    .P1{
-        /* Campos nos contactos */
-        font-size: 13px;
-    }
-
     .N0{
         /* Novidade */
         font-size: 15px;
     }
 
 }
-@media all and (max-width: 450px){
+@media all and (max-width: 500px){
 
     .T0{
         /* Titulo principal */
