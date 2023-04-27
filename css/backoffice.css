@@ -1,0 +1,105 @@
+/* *************************************************************************************************************** */
+                                                    /* GERAIS */
+
+body{
+    /* Definições do BODY */
+    background-color: #c5effc;
+    color: #000;
+    font-family: 'ibmplexmedium';
+}
+
+.caixa{
+    /* Criação da caixa - geral */
+    background-color: #ffffffaa;
+    border: 1px solid #404040;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+.botao{
+    /* Criação do botão - geral */
+    width: 50px;
+    color: #fff;
+    font-size: 1em;
+    background-color: #4169e1;
+    border: none;
+    border-radius: 20px;
+}
+
+.botao-active{
+    /* Criação do botão quando ativo - geral */
+    font-size: 1.1em;
+    background-color: #bc3efa;
+}
+
+.titulo{
+    /* Estética dos titulos - geral */
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    word-spacing: 10px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.subtitulo{
+    /* Estética dos subtitulos - geral */
+    font-size: 1.3em;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.mensagem_erro{
+    /* Estética das mensagens de erro - geral */
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: 'ibmplexlight';
+    text-align: center;
+    color: #ff0000;   
+    word-spacing: 10px;
+    margin: 10px auto;
+}
+
+.navbar{
+    /* Criação da NAVBAR - geral */
+    border: 2px solid #404040;
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.input{
+    width: 50%;
+    height: 30px;
+    font-size: 0.8em;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.botao-form{
+    width: 20%;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0px auto;
+}
+
+
+
