@@ -6,8 +6,9 @@ $rotas = explode("/", $rotas);
 
 switch($rotas[0]){
 
-    case "backoffice": require_once 'Controllers/backoffice_controller.php'; break;    
-    default: require_once 'Controllers/frontoffice_controller.php'; break;       
+    case "":
+    case "login": require_once 'Models/login_model.php'; break;  
+    // default: require_once ''; break;       
 }
 
 ?>
