@@ -1,9 +1,7 @@
 <?php
 
-require_once 'Config/requests.php';
-
 $rotas = $_SERVER["REQUEST_URI"];
-$rotas = str_replace("/sebastiao_alves/", "", $rotas);
+$rotas = str_replace("/sebastiao_alves/backoffice/", "", $rotas);
 $rotas = explode("/", $rotas);
 
 switch($rotas[0]){
