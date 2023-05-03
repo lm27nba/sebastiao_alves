@@ -16,8 +16,9 @@
 
     <!-- === CSS Local === -->
 
-    <link rel="stylesheet" href="../Css/lettering.css">
-    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="Public/Css/lettering.css">
+    <link rel="stylesheet" href="Public/Css/style.css">
+    <link rel="stylesheet" href="Public/Css/backoffice.css">
 
 </head>
 
@@ -37,7 +38,7 @@
                     <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" 
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" 
                     aria-label="Toggle navigation">
-                        <img class="menu-botao" src="../Images/Desktop/menu.svg" alt="Botão Menu">
+                        <img class="menu-botao" src="Public/Images/Desktop/menu.svg" alt="Botão Menu">
                     </button>
                 </div>
             </div>
@@ -114,7 +115,7 @@
                     <div class="carousel-inner">
                         
                         <div class="carousel-item active">
-                            <img src="../Images/Desktop/cabecalho1.jpg" class="d-block imagem" alt="cabecalho1">
+                            <img src="Public/Images/Desktop/cabecalho1.jpg" class="d-block imagem" alt="cabecalho1">
 
                             <div class="carousel-caption z-1 categoria d-none d-md-block">
 
@@ -130,7 +131,7 @@
                         </div>
 
                         <div class="carousel-item">
-                            <img src="../Images/Desktop/cabecalho2.jpg" class="d-block imagem" alt="cabecalho2">
+                            <img src="Public/Images/Desktop/cabecalho2.jpg" class="d-block imagem" alt="cabecalho2">
 
                             <div class="carousel-caption z-1 categoria d-none d-md-block">
 
@@ -146,7 +147,7 @@
                         </div>
                         
                         <div class="carousel-item">
-                            <img src="../Images/Desktop/cabecalho3.jpg" class="d-block imagem" alt="cabecalho3">
+                            <img src="Public/Images/Desktop/cabecalho3.jpg" class="d-block imagem" alt="cabecalho3">
 
                             <div class="carousel-caption z-1 categoria d-none d-md-block">
 
@@ -162,7 +163,7 @@
                         </div>
 
                         <div class="carousel-item">
-                            <img src="../Images/Desktop/cabecalho4.jpg" class="d-block imagem" alt="cabecalho4">
+                            <img src="Public/Images/Desktop/cabecalho4.jpg" class="d-block imagem" alt="cabecalho4">
 
                             <div class="carousel-caption z-1 categoria d-none d-md-block">
 
@@ -206,7 +207,7 @@
                     <div class="carousel-inner">
                         
                         <div class="carousel-item active">
-                            <img src="../Images/Mobile/cabecalho1.jpg" class="d-block imagem" alt="cabecalho1">
+                            <img src="Public/Images/Mobile/cabecalho1.jpg" class="d-block imagem" alt="cabecalho1">
 
                             <div class="carousel-caption z-1 categoria d-block d-md-none">
 
@@ -223,7 +224,7 @@
                         </div>
 
                         <div class="carousel-item">
-                            <img src="../Images/Mobile/cabecalho2.jpg" class="d-block imagem" alt="cabecalho2">
+                            <img src="Public/Images/Mobile/cabecalho2.jpg" class="d-block imagem" alt="cabecalho2">
 
                             <div class="carousel-caption z-1 categoria d-block d-md-none">
 
@@ -240,7 +241,7 @@
                         </div>
                         
                         <div class="carousel-item">
-                            <img src="../Images/Mobile/cabecalho3.jpg" class="d-block imagem" alt="cabecalho3">
+                            <img src="Public/Images/Mobile/cabecalho3.jpg" class="d-block imagem" alt="cabecalho3">
 
                             <div class="carousel-caption z-1 categoria d-block d-md-none">
 
@@ -257,7 +258,7 @@
                         </div>
 
                         <div class="carousel-item">
-                            <img src="../Images/Mobile/cabecalho4.jpg" class="d-block imagem" alt="cabecalho4">
+                            <img src="Public/Images/Mobile/cabecalho4.jpg" class="d-block imagem" alt="cabecalho4">
 
                             <div class="carousel-caption z-1 categoria d-block d-md-none">
 

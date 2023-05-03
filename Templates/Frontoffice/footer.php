@@ -85,13 +85,13 @@
 
                     <div class="redes-sociais d-flex justify-content-center">
                         <a href="#">
-                            <img src="../Images/Desktop/instagram1.svg" alt="Instagram">
+                            <img src="Public/Images/Desktop/instagram1.svg" alt="Instagram">
                         </a>
                         <a href="#">
-                            <img src="../Images/Desktop/facebook1.svg" alt="Facebook">
+                            <img src="Public/Images/Desktop/facebook1.svg" alt="Facebook">
                         </a>
                         <a href="#">
-                            <img src="../Images/Desktop/linkedin1.svg" alt="Linkedin">
+                            <img src="Public/Images/Desktop/linkedin1.svg" alt="Linkedin">
                         </a>
                     </div>
                 </div>
@@ -101,8 +101,8 @@
 
                 <div class="reclamacoes col-12 col-md-6">
                     <div class="d-flex justify-content-center justify-content-md-start">
-                        <img src="../Images/Desktop/livroreclamacoes.svg" alt="livro de reclamações">
-                        <img class="ralc"  src="../Images/Desktop/ralc.svg" alt="RALC">
+                        <img src="Public/Images/Desktop/livroreclamacoes.svg" alt="livro de reclamações">
+                        <img class="ralc"  src="Public/Images/Desktop/ralc.svg" alt="RALC">
                     </div>
                 </div>
 

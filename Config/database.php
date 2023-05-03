@@ -11,7 +11,7 @@ function selectSQL($sql){
 }
 
 // procurar apenas um dado, retorna o primeiro que encontrar no caso de haver vários.
-function selectSQLUnique($sql){
+function selectSQLUnico($sql){
     global $pdo;
     
     $query = $pdo->query($sql);

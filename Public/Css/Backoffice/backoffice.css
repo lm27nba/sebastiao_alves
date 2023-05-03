@@ -22,7 +22,7 @@ body{
 
 .botao{
     /* Criação do botão - geral */
-    width: 50px;
+    width: 80px;
     color: #fff;
     font-size: 1em;
     background-color: #4169e1;
@@ -101,5 +101,7 @@ body{
     margin: 0px auto;
 }
 
-
+.link{
+    text-decoration: none;
+}
 

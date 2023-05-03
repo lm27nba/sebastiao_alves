@@ -5,8 +5,10 @@
 require_once 'Config/config.php';
 require_once 'Config/database.php';
 
-// Helpers diversos:
+// Helpers diversos BackOffice:
 
+require_once 'Helpers/login_helper.php';
 
+// Helpers diversos FrontOffice:
 
 ?>
