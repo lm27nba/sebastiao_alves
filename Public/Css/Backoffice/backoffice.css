@@ -5,7 +5,7 @@ body{
     /* Definições do BODY */
     background-color: #c5effc;
     color: #000;
-    font-family: 'ibmplexmedium';
+    font-family: 'Verdana';
 }
 
 .caixa{
@@ -13,26 +13,40 @@ body{
     background-color: #ffffffaa;
     border: 1px solid #404040;
     border-radius: 20px;
-    width: 100%;
     height: auto;
     text-align: center;
     margin: 20px auto;
     padding: 15px;
+    box-shadow: 0px 0px 5px 5px #40404060;
 }
 
 .botao{
     /* Criação do botão - geral */
-    width: 80px;
+    width: 140px;
+    height: 35px;
     color: #fff;
-    font-size: 1em;
+    text-transform: uppercase;
+    font-size: 0.9em;
     background-color: #4169e1;
     border: none;
     border-radius: 20px;
 }
 
-.botao-active{
+.botao2{
+    /* Criação do botão - geral */
+    width: 90px;
+    height: 28px;
+    color: #000;
+    text-transform: capitalize;
+    font-size: 0.7em;
+    font-weight: bold;
+    background-color: #86a2f8;
+    border: none;
+    border-radius: 20px;
+}
+
+.active{
     /* Criação do botão quando ativo - geral */
-    font-size: 1.1em;
     background-color: #bc3efa;
 }
 
@@ -40,26 +54,29 @@ body{
     /* Estética dos titulos - geral */
     font-size: 2em;
     font-weight: bold;
-    text-transform: uppercase;
     word-spacing: 10px;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 40px;
+}
+
+.subtitulo, .texto{
+    /* Estética dos subtitulos - geral */
+    font-size: 0.8em;
+    text-align: center;
+    margin: 10px auto;   
+    font-weight: bold;
 }
 
 .subtitulo{
-    /* Estética dos subtitulos - geral */
-    font-size: 1.3em;
-    font-weight: bold;
+    /* Estética propria dos subtitulos - geral */
     text-transform: capitalize;
-    text-align: center;
-    margin: 10px auto;
 }
 
 .mensagem_erro{
     /* Estética das mensagens de erro - geral */
     font-size: 1em;
     text-transform: uppercase;
-    font-family: 'ibmplexlight';
+    font-family: 'Verdana';
     text-align: center;
     color: #ff0000;   
     word-spacing: 10px;
@@ -68,13 +85,14 @@ body{
 
 .navbar{
     /* Criação da NAVBAR - geral */
-    border: 2px solid #404040;
-    padding: 10px;
-    margin: 20px auto;
+    border-top: 2px solid #404040;
+    border-bottom: 2px solid #404040;
+    padding: 25px;
+    margin: 40px auto;
     text-align: center;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 7px;
 }
 
 .formulario{
@@ -83,17 +101,18 @@ body{
     gap: 15px;
     margin: 10px auto;
     text-align: center;
+    width: 50%;
 }
 
 .input{
-    width: 50%;
+    width: 40%;
     height: 30px;
     font-size: 0.8em;
     text-align: center;
     margin: 0px auto;
 }
 
-.botao-form{
+.botao_form{
     width: 20%;
     height: 30px;
     text-align: center;
@@ -103,5 +122,10 @@ body{
 
 .link{
     text-decoration: none;
+}
+
+#rota{
+    text-transform: uppercase;
+    font-style: italic;
 }
 

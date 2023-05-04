@@ -1,7 +1,6 @@
 <?php
 
 $url_base = "http://localhost/sebastiao_alves/";
-$urlback_base = "http://localhost/sebastiao_alves/backoffice/";
 
 $base_dados = [
     "dbname" => "sebastiao_alves",

@@ -16,9 +16,9 @@
 
     <!-- === CSS Local === -->
 
-    <link rel="stylesheet" href="Public/Css/lettering.css">
-    <link rel="stylesheet" href="Public/Css/style.css">
-    <link rel="stylesheet" href="Public/Css/backoffice.css">
+    <link rel="stylesheet" href="<?= $url_base; ?>Public/Css/lettering.css">
+    <link rel="stylesheet" href="<?= $url_base; ?>Public/Css/style.css">
+    <link rel="stylesheet" href="<?= $url_base; ?>Public/Css/backoffice.css">
 
 </head>
 

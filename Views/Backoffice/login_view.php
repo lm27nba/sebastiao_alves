@@ -1,21 +1,21 @@
-<main class="container p-0">
-    <div class="row">
-        <div class="col-12 box d-flex flex-column justify-content-center align-items-center mt-5">
+<main class="container-fluid p-0">
+
+    <div class="row m-0">
+        <div class="col-9 caixa d-flex flex-column justify-content-center align-items-center mt-5">
             
-            <div class="subtitle mt-3">login</div>
+            <div class="subtitulo mt-3">login</div>
             
             <?php if($erro): ?>
 
-                <div class="error">Login inválido, tente novamente.</div>
+                <div class="mensagem_erro">Login inválido, tente novamente.</div>
 
             <?php endif; ?>
 
-            <form class="form" action="" method="POST">
-                <input class="inputs" type="text" name="login" placeholder="Nome" required="required">
-                <input class="inputs" type="password" name="pass" placeholder="Senha" required="required">
-                <input class="button" type="submit" value="Entrar">
-            </form>
-            
+            <form class="formulario" action="" method="POST">
+                <input class="input" type="text" name="login" placeholder="Usuário" required="required">
+                <input class="input" type="password" name="pass" placeholder="Senha" required="required">
+                <input class="botao mx-auto" type="submit" value="Entrar">
+            </form>      
         </div>
     </div>
 </main>

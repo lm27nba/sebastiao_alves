@@ -16,10 +16,15 @@
 
     <!-- === CSS Local === -->
 
-    <link rel="stylesheet" href="Public/Css/backoffice.css">
+    <link rel="stylesheet" href="<?= $url_base; ?>Public/Css/Backoffice/backoffice.css">
 
 </head>
 
 <body class="p-0">
+    <header class="container-fluid p-0">
+        <div class="row m-0">
+            <div class="col-12 titulo">Bem-vindo ao Backoffice</div>
+        </div>
+    </header>
 
    

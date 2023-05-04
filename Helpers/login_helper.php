@@ -13,7 +13,7 @@ function logincodificado($login, $senha){
 
             $id = $usuario["id"];
             $agora = date("H:i:s - d/m/Y");
-            iduSQL("INSERT INTO accessos (entrada, id_utilizador) VALUES ('$agora','$id')");
+            iduSQL("INSERT INTO acessos (entrada, id_utilizador) VALUES ('$agora','$id')");
             return true;
         }
         else{
@@ -31,7 +31,7 @@ function semSession(){
     session_start();
 
     if(empty($_SESSION["usuario"])){
-        header("Location: ". $urlback_base);
+        header("Location: ". $url_base. "login");
         exit();
     }
 }
@@ -42,10 +42,16 @@ function comSession(){
     session_start();
 
     if(!empty($_SESSION["usuario"])){
-        header("Location: ". $urlback_base. "/inicio");
+        header("Location: ". $url_base. "inicio");
         exit();
     }
 
+}
+
+function criarUser($nome, $login, $senha){
+
+    $senha = password_hash($senha, PASSWORD_DEFAULT);
+    iduSQL("INSERT INTO utilizador(nome, login, senha) VALUES ('$nome', '$login', '$senha')");
 }
 
 ?>
