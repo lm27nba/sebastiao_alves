@@ -22,11 +22,4 @@
 
 </head>
 
-<body class="p-0">
-    <header class="container-fluid p-0">
-        <div class="row m-0">
-            <div class="col-12 titulo">Bem-vindo ao Backoffice</div>
-        </div>
-    </header>
-
    

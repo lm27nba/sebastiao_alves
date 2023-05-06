@@ -1,3 +1,10 @@
+<?php
+
+$contactos = retornarCampoContactos();
+$redes = retornarCampoRedes();
+
+?>
+
     <footer>
         <div class="container">
 
@@ -62,19 +69,18 @@
                         <div class="col-12 col-md-5 morada">
                             <h5 class="my-0 T4">morada</h5>
                             <p class="my-0 P1 texto-contactos">
-                                Lorem ipsum dolor sit amet, 16 <br>
-                                1234-543 Lorem
+                                <?= $contactos["morada"]; ?>
                             </p>
                         </div>
 
                         <div class="col-12 col-md-4 ms-md-3 telefone">
                             <h5 class="my-0 T4">telefone</h5>
-                            <p class="my-0 P1 texto-contactos">+351 123 456 789</p>
+                            <p class="my-0 P1 texto-contactos"> <?= $contactos["telefone"]; ?></p>
                         </div>
 
                         <div class="col-12 col-md-3 mail">
                             <h5 class="my-0 T4">email</h5>
-                            <p class="my-0 P1 texto-contactos">lorem@lorem.pt</p>
+                            <p class="my-0 P1 texto-contactos"> <?= $contactos["mail"]; ?></p>
                         </div>
                     </div>
                 </div>
@@ -84,13 +90,13 @@
                     <h1 class="titulo-redes-sociais text-center FT1">siga-me nas redes sociais</h1>
 
                     <div class="redes-sociais d-flex justify-content-center">
-                        <a href="#">
+                        <a href="<?= $redes["instagram"]; ?>">
                             <img src="<?= $url_base;?>Uploads/Desktop/instagram1.svg" alt="Instagram">
                         </a>
-                        <a href="#">
+                        <a href="<?= $redes["facebook"]; ?>">
                             <img src="<?= $url_base;?>Uploads/Desktop/facebook1.svg" alt="Facebook">
                         </a>
-                        <a href="#">
+                        <a href="<?= $redes["linkedin"]; ?>">
                             <img src="<?= $url_base;?>Uploads/Desktop/linkedin1.svg" alt="Linkedin">
                         </a>
                     </div>

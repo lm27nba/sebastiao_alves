@@ -426,6 +426,7 @@
 .texto-contactos{
     /* Footer - Dar a margem às caixas */
     margin-top: 6px;
+    max-width: 240px;
 }
 
 .reclamacoes{
@@ -699,6 +700,7 @@
     .texto-contactos{
         /* Footer - Dar a margem às caixas */
         margin-top: 6px;
+        margin: auto;
     }
 
     .footer-esquerda, .reclamacoes{

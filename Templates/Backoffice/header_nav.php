@@ -68,8 +68,8 @@
                         <button class="botao <?= (($pagina_atual != "redes") ? "" : "active");?>">redes</button>
                     </a>
 
-                    <a class="link" href="<?= $url_backoffice. "configurações"; ?>">
-                        <button class="botao <?= (($pagina_atual != "configurações") ? "" : "active");?>">configurações</button>
+                    <a class="link" href="<?= $url_backoffice. "configuracoes"; ?>">
+                        <button class="botao <?= (($pagina_atual != "configuracoes") ? "" : "active");?>">configurações</button>
                     </a>
 
                     <a class="link" href="<?= $url_backoffice. "sair"; ?>">

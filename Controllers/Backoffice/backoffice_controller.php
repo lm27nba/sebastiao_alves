@@ -11,9 +11,40 @@ switch($rotas[1]){
     case "login": require_once 'Models/Backoffice/login_model.php'; break;
     case "inicio": require_once 'Models/Backoffice/inicio_model.php'; break;
     case "carousel": require_once 'Models/Backoffice/carousel_model.php'; break;
-    case "sair": require_once 'Models/Backoffice/sair_ model.php'; break;
+    
+    case "imprensa":
+        switch((isset($rotas[2])) ? $rotas[2] : ""){
+
+            case "": require_once 'Models/Backoffice/Imprensa/imprensa_model.php'; break;
+            case "adicionar": require_once 'Models/Backoffice/Imprensa/adicionar_imprensa_model.php'; break;
+            case "editar": require_once 'Models/Backoffice/Imprensa/editar_imprensa_model.php'; break;
+            case "apagar": require_once 'Models/Backoffice/Imprensa/apagar_imprensa_model.php'; break;
+            default: require_once 'Models/Backoffice/404_model.php'; break;
+        }
+    break;
+
+    case "contactos":
+        switch((isset($rotas[2])) ? $rotas[2] : ""){
+
+            case "": require_once 'Models/Backoffice/Contactos/contactos_model.php'; break;
+            case "editar": require_once 'Models/Backoffice/Contactos/editar_contactos_model.php'; break;
+            default: require_once 'Models/Backoffice/404_model.php'; break;
+        }
+    break;
+
+    case "redes":
+        switch((isset($rotas[2])) ? $rotas[2] : ""){
+
+            case "": require_once 'Models/Backoffice/Redes/redes_model.php'; break;
+            case "editar": require_once 'Models/Backoffice/Redes/editar_redes_model.php'; break;
+            default: require_once 'Models/Backoffice/404_model.php'; break;
+        }
+    break;
+
+    case "configuracoes": require_once 'Models/Backoffice/Configuracoes/configuracoes_model.php'; break;
+    case "sair": require_once 'Models/Backoffice/sair_model.php'; break;
     case "404":
-    default: require_once 'Models/Both/404_model.php'; break;       
+    default: require_once 'Models/Backoffice/404_model.php'; break;       
 }
 
 ?>

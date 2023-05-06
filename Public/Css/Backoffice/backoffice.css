@@ -162,18 +162,19 @@ body{
     font-size: 12px;
 }
 
-.botao_form, .botaook, .botaonok{
+.botaoneutro, .botaook, .botaonok{
     width: 180px;
     height: 30px;
     border: none;
     color: #fff;
     text-align: center;
-    font-weight: bold;
+    text-transform: uppercase;
+    font-weight: 500;
     margin: 10px auto;
     border-radius: 50px;
 }
 
-.botao_form{
+.botaoneutro{
     background-color: #404040; 
 }
 

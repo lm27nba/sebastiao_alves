@@ -1,6 +1,10 @@
 <main class="container-fluid p-0">
 
     <div class="row m-0">
+        <div class="col-12 titulo">Bem-vindo ao Backoffice</div>
+    </div>
+    
+    <div class="row m-0">
         <div class="col-9 caixa d-flex flex-column justify-content-center align-items-center mt-5">
             
             <div class="subtitulo mt-3">login</div>
