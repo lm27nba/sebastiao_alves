@@ -1,9 +1,11 @@
 <?php 
 
+// Destruição da sessão.
 session_start();
 session_destroy();
 
-header("Location: ". $url_base);
+// Rota a seguir no final.
+header("Location: ". $url_backoffice);
 exit();
 
 ?>

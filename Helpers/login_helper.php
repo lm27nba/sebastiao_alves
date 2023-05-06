@@ -31,7 +31,7 @@ function semSession(){
     session_start();
 
     if(empty($_SESSION["usuario"])){
-        header("Location: ". $url_base. "login");
+        header("Location: ". $url_backoffice. "login");
         exit();
     }
 }
@@ -42,12 +42,13 @@ function comSession(){
     session_start();
 
     if(!empty($_SESSION["usuario"])){
-        header("Location: ". $url_base. "inicio");
+        header("Location: ". $url_backoffice. "inicio");
         exit();
     }
 
 }
 
+// Criar um novo acesso ao backoffice.
 function criarUser($nome, $login, $senha){
 
     $senha = password_hash($senha, PASSWORD_DEFAULT);

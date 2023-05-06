@@ -21,23 +21,23 @@
                             <div class="collapse navbar-collapse d-block-md px-0" id="navbarNavDropdown">
                                 <ul class="navbar-nav text-uppercase M0 mx-auto gap-2">
                                     <li class="nav-item nav-item-footer me-md-3">
-                                        <a class="nav-link py-0 active" aria-current="page" href="home.html">Home</a>
+                                        <a class="nav-link py-0 active" aria-current="page" href="<?= $url_base;?>home.html">Home</a>
                                     </li>
 
                                     <li class="nav-item nav-item-footer me-md-3">
-                                        <a class="nav-link py-0" href="autor.html">Autor</a>
+                                        <a class="nav-link py-0" href="<?= $url_base;?>autor.html">Autor</a>
                                     </li>
                                     
                                     <li class="nav-item nav-item-footer me-md-3">
-                                        <a class="nav-link py-0" href="livros.html">Livros</a>
+                                        <a class="nav-link py-0" href="<?= $url_base;?>livros.html">Livros</a>
                                     </li>
 
                                     <li class="nav-item nav-item-footer me-md-3">
-                                        <a class="nav-link py-0" href="imprensa.html">Imprensa</a>
+                                        <a class="nav-link py-0" href="<?= $url_base;?>imprensa.html">Imprensa</a>
                                     </li>
 
                                     <li class="nav-item nav-item-footer me-md-3">
-                                        <a class="nav-link py-0" href="contactos.html">Contactos</a>
+                                        <a class="nav-link py-0" href="<?= $url_base;?>contactos.html">Contactos</a>
                                     </li>
                                 </ul>
                             </div>
@@ -85,13 +85,13 @@
 
                     <div class="redes-sociais d-flex justify-content-center">
                         <a href="#">
-                            <img src="Public/Images/Desktop/instagram1.svg" alt="Instagram">
+                            <img src="<?= $url_base;?>Uploads/Desktop/instagram1.svg" alt="Instagram">
                         </a>
                         <a href="#">
-                            <img src="Public/Images/Desktop/facebook1.svg" alt="Facebook">
+                            <img src="<?= $url_base;?>Uploads/Desktop/facebook1.svg" alt="Facebook">
                         </a>
                         <a href="#">
-                            <img src="Public/Images/Desktop/linkedin1.svg" alt="Linkedin">
+                            <img src="<?= $url_base;?>Uploads/Desktop/linkedin1.svg" alt="Linkedin">
                         </a>
                     </div>
                 </div>
@@ -101,8 +101,8 @@
 
                 <div class="reclamacoes col-12 col-md-6">
                     <div class="d-flex justify-content-center justify-content-md-start">
-                        <img src="Public/Images/Desktop/livroreclamacoes.svg" alt="livro de reclamações">
-                        <img class="ralc"  src="Public/Images/Desktop/ralc.svg" alt="RALC">
+                        <img src="<?= $url_base;?>Uploads/Desktop/livroreclamacoes.svg" alt="livro de reclamações">
+                        <img class="ralc"  src="<?= $url_base;?>Uploads/Desktop/ralc.svg" alt="RALC">
                     </div>
                 </div>
 

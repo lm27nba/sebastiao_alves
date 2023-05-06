@@ -3,27 +3,27 @@
 
 @font-face {
     font-family: "latoblack";
-    src: url(../fonts/lato-black.ttf);
+    src: url(../../fonts/lato-black.ttf);
 }
 
 @font-face {
     font-family: "latobold";
-    src: url(../fonts/lato-bold.ttf);
+    src: url(../../fonts/lato-bold.ttf);
 }
 
 @font-face {
     font-family: "ibmplexbold";
-    src: url(../fonts/IBMPlexSans-Bold.ttf);
+    src: url(../../fonts/IBMPlexSans-Bold.ttf);
 }
 
 @font-face {
     font-family: "ibmplexlight";
-    src: url(../fonts/IBMPlexSans-Light.ttf);
+    src: url(../../fonts/IBMPlexSans-Light.ttf);
 }
 
 @font-face {
     font-family: "ibmplexmedium";
-    src: url(../fonts/IBMPlexSans-Medium.ttf);
+    src: url(../../fonts/IBMPlexSans-Medium.ttf);
 }
 
 /* *************************************************************************************************************** */

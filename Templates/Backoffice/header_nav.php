@@ -9,13 +9,14 @@
     <title>Backoffice - Sebastião Alves</title>
 
     <!-- === CSS Bootstrap === -->
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" 
     crossorigin="anonymous">
 
-    <!-- === CSS Local === -->
+    <!-- === Link para o FileManager === -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/37.1.0/classic/ckeditor.js"></script>
 
+    <!-- === CSS Local === -->
     <link rel="stylesheet" href="<?= $url_base; ?>Public/Css/Backoffice/backoffice.css">
 
 </head>
@@ -31,35 +32,35 @@
         <div class="row m-0">
             <div class="col-12 mx-auto px-2">
                 <div class="col-12 navbar">
-                    <a class="link" href="<?= $url_base. "backoffice/inicio"; ?>">
+                    <a class="link" href="<?= $url_backoffice. "inicio"; ?>">
                         <button class="botao <?= (($pagina_atual != "inicio") ? "" : "active");?>">inicio</button>
                     </a>
 
-                    <a class="link" href="<?= $url_base. "backoffice/carousel"; ?>">
+                    <a class="link" href="<?= $url_backoffice. "carousel"; ?>">
                         <button class="botao <?= (($pagina_atual != "carousel") ? "" : "active");?>">carousel</button>
                     </a>
 
-                    <a class="link" href="<?= $url_base. "backoffice/home"; ?>">
+                    <a class="link" href="<?= $url_backoffice. "home"; ?>">
                         <button class="botao <?= (($pagina_atual != "home") ? "" : "active");?>">home</button>
                     </a>
 
-                    <a class="link" href="<?= $url_base. "backoffice/autor"; ?>">
+                    <a class="link" href="<?= $url_backoffice. "autor"; ?>">
                         <button class="botao <?= (($pagina_atual != "autor") ? "" : "active");?>">autor</button>
                     </a>
 
-                    <a class="link" href="<?= $url_base. "backoffice/livros"; ?>">
+                    <a class="link" href="<?= $url_backoffice. "livros"; ?>">
                         <button class="botao <?= (($pagina_atual != "livros") ? "" : "active");?>">livros</button>
                     </a>
 
-                    <a class="link" href="<?= $url_base. "backoffice/destaques"; ?>">
+                    <a class="link" href="<?= $url_backoffice. "destaques"; ?>">
                         <button class="botao <?= (($pagina_atual != "destaques") ? "" : "active");?>">destaques</button>
                     </a>
 
-                    <a class="link" href="<?= $url_base. "backoffice/imprensa"; ?>">
+                    <a class="link" href="<?= $url_backoffice. "imprensa"; ?>">
                         <button class="botao <?= (($pagina_atual != "imprensa") ? "" : "active");?>">imprensa</button>
                     </a>
 
-                    <a class="link" href="<?= $url_base. "backoffice/contactos"; ?>">
+                    <a class="link" href="<?= $url_backoffice. "contactos"; ?>">
                         <button class="botao <?= (($pagina_atual != "contactos") ? "" : "active");?>">contactos</button>
                     </a>
 
@@ -67,11 +68,11 @@
                         <button class="botao <?= (($pagina_atual != "redes") ? "" : "active");?>">redes</button>
                     </a>
 
-                    <a class="link" href="<?= $url_base. "backoffice/configurações"; ?>">
+                    <a class="link" href="<?= $url_backoffice. "configurações"; ?>">
                         <button class="botao <?= (($pagina_atual != "configurações") ? "" : "active");?>">configurações</button>
                     </a>
 
-                    <a class="link" href="<?= $url_base. "backoffice/sair"; ?>">
+                    <a class="link" href="<?= $url_backoffice. "sair"; ?>">
                         <button class="botao <?= (($pagina_atual != "sair") ? "" : "active");?>">sair</button>
                     </a>
                 </div>

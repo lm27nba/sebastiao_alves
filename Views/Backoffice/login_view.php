@@ -5,9 +5,11 @@
             
             <div class="subtitulo mt-3">login</div>
             
-            <?php if($erro): ?>
+            <?php if($mensagem): ?>
 
-                <div class="mensagem_erro">Login inválido, tente novamente.</div>
+                <div class="<?= ($mensagem == "true") ? "mensagem_sucesso" : "mensagem_erro"; ?> py-auto">
+                    <?= ($mensagem == "true") ? "Login efetuado com sucesso." : "Login inválido, tente novamente."; ?>
+                </div>
 
             <?php endif; ?>
 
