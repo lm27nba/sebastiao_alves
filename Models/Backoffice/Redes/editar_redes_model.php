@@ -9,12 +9,6 @@ $pagina_atual = (empty($rotas[1]))? NULL : $rotas[1];
 
 // Variaveis:
 $redes = retornarCampoRedes();
-
-// Carregamento dos "fragmentos" que constroem a página:
-require_once 'Templates/Backoffice/header.php';
-require_once 'Views/Backoffice/Redes/editar_redes_view.php';
-
-// Variaveis após o carregamento da página:
 $form = isset($_POST["instagram"]) && isset($_POST["facebook"]) && isset($_POST["linkedin"]);
 
 // Havendo dados introduzidos no formulário:
@@ -28,4 +22,9 @@ if($form){
     header("Location: ". $url_backoffice . "redes");
     exit();
 }
+
+// Carregamento dos "fragmentos" que constroem a página:
+require_once 'Templates/Backoffice/header.php';
+require_once 'Views/Backoffice/Redes/editar_redes_view.php';
+
 ?>

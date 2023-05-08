@@ -6,10 +6,6 @@ comSession();
 // Rotas possiveis na página:
 $mensagem = (empty($rotas[2])) ? false : $rotas[2];
 
-// Carregamento dos "fragmentos" que constroem a página:
-require 'Templates/Backoffice/header.php';
-require 'Views/Backoffice/login_view.php';
-
 // Variaveis da página:
 $form = isset($_POST["login"]) && isset($_POST["pass"]);
 
@@ -36,5 +32,8 @@ if($form){
     }
 }
 
+// Carregamento dos "fragmentos" que constroem a página:
+require 'Templates/Backoffice/header.php';
+require 'Views/Backoffice/Login/login_view.php';
 
 ?>

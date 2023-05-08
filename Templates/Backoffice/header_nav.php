@@ -13,7 +13,7 @@
     rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" 
     crossorigin="anonymous">
 
-    <!-- === Link para o FileManager === -->
+    <!-- === Link para o CKEditor === -->
     <script src="https://cdn.ckeditor.com/ckeditor5/37.1.0/classic/ckeditor.js"></script>
 
     <!-- === CSS Local === -->

@@ -11,5 +11,6 @@ require_once 'Helpers/login_helper.php';
 require_once 'Helpers/acesso_helper.php';
 require_once 'Helpers/carousel_helper.php';
 require_once 'Helpers/contactos_helper.php';
+require_once 'Helpers/imprensa_helper.php';
 
 ?>

@@ -9,12 +9,6 @@ $pagina_atual = (empty($rotas[1]))? NULL : $rotas[1];
 
 // Variaveis:
 $contactos = retornarCampoContactos();
-
-// Carregamento dos "fragmentos" que constroem a página:
-require_once 'Templates/Backoffice/header.php';
-require_once 'Views/Backoffice/Contactos/editar_contactos_view.php';
-
-// Variaveis após o carregamento da página:
 $form = isset($_POST["telefone"]) && isset($_POST["morada"]) && isset($_POST["mail"]) && isset($_POST["horario"]);
 
 // Havendo dados introduzidos no formulário:
@@ -29,4 +23,9 @@ if($form){
     header("Location: ". $url_backoffice . "contactos");
     exit();
 }
+
+// Carregamento dos "fragmentos" que constroem a página:
+require_once 'Templates/Backoffice/header.php';
+require_once 'Views/Backoffice/Contactos/editar_contactos_view.php';
+
 ?>

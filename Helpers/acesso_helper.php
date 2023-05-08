@@ -7,22 +7,19 @@ function ultimoAcesso($id){
 }
 
 // Atualizar os dados relativos ao login:
-function alterarSenha($id, $senha_guardada, $senha_antiga, $senha_nova, $confirmar_senha){
+function alterarSenha($id, $senha_nova){
 
-    $s_antiga = password_hash($senha_antiga, PASSWORD_DEFAULT);
-    $s_nova = password_hash($senha_nova, PASSWORD_DEFAULT);
-    $c_senha = password_hash($confirmar_senha, PASSWORD_DEFAULT);
+    $senha = password_hash($senha_nova, PASSWORD_DEFAULT);
+    iduSQL("UPDATE utilizador SET senha='$senha'WHERE id='$id'");
+}
 
-    if(($senha_guardada == $s_antiga) && ($s_nova == $c_senha)){
-        iduSQL("UPDATE utilizador SET senha='$s_nova'WHERE id='$id'");
-        header("Location: " .$url_backoffice. "configuracoes/ok");
-        exit();
+//Validar Senhas introduzidas:
+function validarNovosDados($senha_antiga, $senha_guardada, $senha_nova, $confirmar_senha){
+
+    if(password_verify($senha_antiga, $senha_guardada) && ($senha_nova == $confirmar_senha)){
+        return true;
     }
-
-    else{
-        header("Location: " .$url_backoffice. "configuracoes/erro");
-        exit();
-    }  
+    else{ return false;}
 }
 
 ?>

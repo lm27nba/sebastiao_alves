@@ -13,6 +13,6 @@ $id = $user["id"];
 
 // Carregamento dos "fragmentos" que constroem a página:
 require_once 'Templates/Backoffice/header_nav.php';
-require_once 'Views/Backoffice/inicio_view.php';
+require_once 'Views/Backoffice/Inicio/inicio_view.php';
 
 ?>
