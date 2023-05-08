@@ -32,8 +32,7 @@
                     <div class="col-12 mt-4">
                         <label class="texto2 w-100" for="texto">Texto da Imprensa:</label>
 
-                        <textarea name="texto" id="texto" cols="100" rows="5"
-                        placeholder="Insira aqui um texto sobre a publicação."></textarea>
+                        <textarea name="texto" id="texto" placeholder="Insira aqui um texto sobre a publicação."></textarea>
 
                         <script>
                             ClassicEditor

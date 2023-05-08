@@ -24,7 +24,8 @@ if($form){
 }
 
 // Carregamento dos "fragmentos" que constroem a página:
-require_once 'Templates/Backoffice/header_nav.php';
-require_once 'Views/Backoffice/Imprensa/adicionar_imprensa_view.php';
+require 'Templates/Backoffice/header_nav.php';
+require 'Views/Backoffice/Imprensa/adicionar_imprensa_view.php';
+require 'Templates/Backoffice/footer.php';
 
 ?>

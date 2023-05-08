@@ -11,7 +11,8 @@ $pagina_atual = (empty($rotas[1]))? NULL : $rotas[1];
 $contactos = retornarCampoContactos();
 
 // Carregamento dos "fragmentos" que constroem a página:
-require_once 'Templates/Backoffice/header_nav.php';
-require_once 'Views/Backoffice/Contactos/contactos_view.php';
+require 'Templates/Backoffice/header_nav.php';
+require 'Views/Backoffice/Contactos/contactos_view.php';
+require 'Templates/Backoffice/footer.php';
 
 ?>

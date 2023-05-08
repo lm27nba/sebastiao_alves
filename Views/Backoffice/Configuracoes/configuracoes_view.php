@@ -9,13 +9,13 @@
                 <form method="POST" class="formulario1 gap-2 mt-4">
 
                     <div class="col-3 d-flex flex-column gap-3 mx-auto">
-                        <input class="input1 text-center px-2" type="password" name="senha_antiga" 
+                        <input class="input2 text-center px-2" type="password" name="senha_antiga" 
                         placeholder="Senha Atual" required="required">
 
-                        <input class="input1 text-center px-2" type="password" name="senha_nova" 
+                        <input class="input2 text-center px-2" type="password" name="senha_nova" 
                         placeholder="Nova Senha" required="required">
 
-                        <input class="input1 text-center px-2" type="password" name="confirmar_senha" 
+                        <input class="input2 text-center px-2" type="password" name="confirmar_senha" 
                         placeholder="Confirmar Senha" required="required">
                     </div>
                     <div class="mt-3">

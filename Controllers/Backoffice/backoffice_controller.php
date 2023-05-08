@@ -12,6 +12,26 @@ switch($rotas[1]){
     case "inicio": require_once 'Models/Backoffice/Inicio/inicio_model.php'; break;
     case "carousel": require_once 'Models/Backoffice/carousel_model.php'; break;
     
+    case "home":
+        switch((isset($rotas[2])) ? $rotas[2] : ""){
+
+            case "":
+            case "home": require_once 'Models/Backoffice/Home/home_model.php'; break;
+            case "editar": require_once 'Models/Backoffice/Home/editar_home_model.php'; break;
+            default: require_once 'Models/Backoffice/Erro/404_model.php'; break;
+        }
+    break;
+
+    case "autor":
+        switch((isset($rotas[2])) ? $rotas[2] : ""){
+
+            case "":
+            case "autor": require_once 'Models/Backoffice/Autor/autor_model.php'; break;
+            case "editar": require_once 'Models/Backoffice/Autor/editar_autor_model.php'; break;
+            default: require_once 'Models/Backoffice/Erro/404_model.php'; break;
+        }
+    break;
+
     case "imprensa":
         switch((isset($rotas[2])) ? $rotas[2] : ""){
 

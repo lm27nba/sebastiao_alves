@@ -38,15 +38,15 @@ body{
 
 .botao2{
     /* Criação do botão - geral */
-    width: 80px;
+    width: 50px;
     height: 25px;
     color: #000;
-    text-transform: capitalize;
-    font-size: 10px;
     font-weight: bold;
-    background-color: #86a2f8;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #9db6ff;
     border: none;
-    border-radius: 20px;
+    border-radius: 50px;
 }
 
 .botao3{
@@ -87,7 +87,7 @@ body{
 .subtitulo{
     /* Estética propria dos subtitulos - geral */
     font-size: 20px;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 .subtitulo1{
@@ -164,17 +164,25 @@ body{
     text-align: center;
     margin: 0px auto;
 }
-.input1{
+.input1, .input2{
     width:  75%;
     height: 30px;
     font-size: 12px;
     padding: 0px 20px;
 }
 
+.input2{
+    width:  100%;
+}
+
 textarea{
     width:  100%;
     font-size: 12px;
     padding: 0px 20px;
+}
+
+hr{
+    border: 1px solid #000 !important;
 }
 
 .botaoneutro, .botaook, .botaonok{
@@ -238,11 +246,11 @@ th{
 }
 
 .coluna3{
-    width: 550px;
+    width: 600px;
 }
 
 .coluna4{
-    width: 260px;
+    width: 220px;
 }
 
 .coluna5{
@@ -251,5 +259,10 @@ th{
 
 .mini_banner{
     max-width: 140px;
+    height: auto;
+}
+
+.imagem_apagar, .imagem_autor{
+    width: 20%;
     height: auto;
 }

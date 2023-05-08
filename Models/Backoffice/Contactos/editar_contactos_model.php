@@ -25,7 +25,8 @@ if($form){
 }
 
 // Carregamento dos "fragmentos" que constroem a página:
-require_once 'Templates/Backoffice/header.php';
-require_once 'Views/Backoffice/Contactos/editar_contactos_view.php';
+require 'Templates/Backoffice/header.php';
+require 'Views/Backoffice/Contactos/editar_contactos_view.php';
+require 'Templates/Backoffice/footer.php';
 
 ?>

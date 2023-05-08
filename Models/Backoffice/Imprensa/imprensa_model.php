@@ -19,7 +19,8 @@ $total_a_saltar = ($pag-1)*$elementos_por_pagina;
 $imprensa = imprensaPorPagina($elementos_por_pagina, $total_a_saltar);
 
 // Carregamento dos "fragmentos" que constroem a página:
-require_once 'Templates/Backoffice/header_nav.php';
-require_once 'Views/Backoffice/Imprensa/imprensa_view.php';
+require 'Templates/Backoffice/header_nav.php';
+require 'Views/Backoffice/Imprensa/imprensa_view.php';
+require 'Templates/Backoffice/footer.php';
 
 ?>

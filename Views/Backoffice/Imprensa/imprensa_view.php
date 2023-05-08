@@ -2,7 +2,7 @@
     <div class="row m-0">                     
         <div class="col-10 caixa">                     
                             
-            <table>
+            <table class=" mx-auto">
                 <tr>
                     <th class="coluna1">imagem</th>
                     <th class="coluna2">título</th>

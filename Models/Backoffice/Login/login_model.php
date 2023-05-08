@@ -35,5 +35,6 @@ if($form){
 // Carregamento dos "fragmentos" que constroem a página:
 require 'Templates/Backoffice/header.php';
 require 'Views/Backoffice/Login/login_view.php';
+require 'Templates/Backoffice/footer.php';
 
 ?>
