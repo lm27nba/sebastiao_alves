@@ -12,6 +12,7 @@ require_once 'Helpers/autor_helper.php';
 require_once 'Helpers/carousel_helper.php';
 require_once 'Helpers/contactos_helper.php';
 require_once 'Helpers/imprensa_helper.php';
+require_once 'Helpers/livros_helper.php';
 require_once 'Helpers/login_helper.php';
 
 

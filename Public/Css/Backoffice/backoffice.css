@@ -8,6 +8,10 @@ body{
     font-family: 'Verdana';
 }
 
+footer{
+    height: 20px;
+}
+
 .caixa{
     /* Criação da caixa - geral */
     background-color: #ffffffaa;
@@ -230,6 +234,10 @@ td, tr, th{
 th{
     height: 25px;
     text-transform: uppercase;
+}
+
+.primeira_linha{
+    background-color: #909090;
 }
 
 .td_especial{

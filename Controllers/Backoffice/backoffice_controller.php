@@ -32,6 +32,28 @@ switch($rotas[1]){
         }
     break;
 
+    case "livros":
+        switch((isset($rotas[2])) ? $rotas[2] : ""){
+
+            case "":
+            case "ver": require_once 'Models/Backoffice/Livros/livros_model.php'; break;
+            case "adicionar": require_once 'Models/Backoffice/Livros/adicionar_livros_model.php'; break;
+            case "editar": require_once 'Models/Backoffice/Livros/editar_livros_model.php'; break;
+            case "apagar": require_once 'Models/Backoffice/Livros/apagar_livros_model.php'; break;
+            default: require_once 'Models/Backoffice/Erro/404_model.php'; break;
+        }
+    break;
+
+    case "destaques":
+        switch((isset($rotas[2])) ? $rotas[2] : ""){
+
+            case "":
+            case "ver": require_once 'Models/Backoffice/Destaques/destaques_model.php'; break;
+            case "editar": require_once 'Models/Backoffice/Destaques/editar_destaques_model.php'; break;
+            default: require_once 'Models/Backoffice/Erro/404_model.php'; break;
+        }
+    break;
+
     case "imprensa":
         switch((isset($rotas[2])) ? $rotas[2] : ""){
 

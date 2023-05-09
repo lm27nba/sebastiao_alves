@@ -67,14 +67,15 @@
                                 
                                 <li class="nav-item me-md-2 dropdown">
                                     <a class="nav-link <?= ($rotas[0] == "livros") ? "active" : ""; ?> dropdown" 
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false" 
+                                    href="<?= $url_base;?>livros>">
                                         Livros
                                     </a>
                                     <ul class="dropdown-menu SM1">
-                                        <li><a class="dropdown-item <?= ($rotas[0] == "livro" && $rotas[1] == $l["id"]) ? "active" : ""; ?>" href="<?= $url_base;?>livros/<?= $id; ?>">Senhora do Amor e da Guerra</a></li>
-                                        <li><a class="dropdown-item" href="<?= $url_base;?>livros.html">O Caracol Estrábico</a></li>
-                                        <li><a class="dropdown-item" href="<?= $url_base;?>livros.html">O Coleccionador de Amnésias</a></li>
-                                        <li><a class="dropdown-item" href="<?= $url_base;?>livros.html">O Velho que Pensava que Fugia</a></li>
+                                        <li><a class="dropdown-item <?= ($rotas[0] == "livro" && $rotas[1] == $l["id"]) ? "active" : ""; ?>" href="<?= $url_base;?>livros/<?= $l["id"]; ?>">Senhora do Amor e da Guerra</a></li>
+                                        <li><a class="dropdown-item" href="<?= $url_base;?>livros/<?= $l["id"]; ?>">O Caracol Estrábico</a></li>
+                                        <li><a class="dropdown-item" href="<?= $url_base;?>livros/<?= $l["id"]; ?>">O Coleccionador de Amnésias</a></li>
+                                        <li><a class="dropdown-item" href="<?= $url_base;?>livros/<?= $l["id"]; ?>">O Velho que Pensava que Fugia</a></li>
                                     </ul>
                                 </li>
 
