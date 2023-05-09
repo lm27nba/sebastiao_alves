@@ -7,13 +7,13 @@ require_once 'Config/database.php';
 
 // Helpers diversos:
 
-require_once 'Helpers/acesso_helper.php';
-require_once 'Helpers/autor_helper.php';
-require_once 'Helpers/carousel_helper.php';
-require_once 'Helpers/contactos_helper.php';
-require_once 'Helpers/imprensa_helper.php';
-require_once 'Helpers/livros_helper.php';
-require_once 'Helpers/login_helper.php';
+require_once 'Helpers/Backoffice/acesso_helper.php';
+require_once 'Helpers/Backoffice/autor_helper.php';
+require_once 'Helpers/Backoffice/carousel_helper.php';
+require_once 'Helpers/Backoffice/contactos_helper.php';
+require_once 'Helpers/Backoffice/imprensa_helper.php';
+require_once 'Helpers/Backoffice/livros_helper.php';
+require_once 'Helpers/Backoffice/login_helper.php';
 
 
 ?>

@@ -24,6 +24,11 @@ function retonarLivroEspecifico($id){
     return selectSQLUnico("SELECT * FROM livros WHERE id='$id'");
 }
 
+// Descarregar partes dos livros consoante um id:
+function retonarPartesLivroEspecifico($id){
+    return selectSQLUnico("SELECT imagem, titulo FROM livros WHERE id='$id'");
+}
+
 // Editar um elemento na base de dados: 
 function editarLivro($id, $imagem, $titulo, $texto){
 
@@ -36,6 +41,27 @@ function editarLivro($id, $imagem, $titulo, $texto){
 // Apagar um livro:
 function apagarLivro($id){
     iduSQL("DELETE FROM livros WHERE id='$id'");
+}
+
+// Descarregar os livros em destaques:
+function livrosEmDestaque(){
+    return selectSQL("SELECT * FROM destaques");
+}
+
+// Descarregar o nome do destaque:
+function destaqueEspecifico($id){
+    return selectSQLUnico("SELECT destaque FROM destaques WHERE id='$id'");
+}
+
+// Descarregar os livros para destaques:
+function retornarListaLivros(){
+    return selectSQL("SELECT id, titulo FROM livros");
+}
+
+// Editar os destaques na base de dados:
+function editarDestaques($id, $destaque, $id_livro){
+
+    iduSQL("UPDATE destaques SET destaque='$destaque', id_livros='$id_livro' WHERE id='$id'");
 }
 
 ?>
