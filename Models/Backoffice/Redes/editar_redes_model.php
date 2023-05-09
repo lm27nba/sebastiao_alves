@@ -24,7 +24,7 @@ if($form){
 }
 
 // Carregamento dos "fragmentos" que constroem a página:
-require_once 'Templates/Backoffice/header.php';
-require_once 'Views/Backoffice/Redes/editar_redes_view.php';
+require 'Templates/Backoffice/header.php';
+require 'Views/Backoffice/Redes/editar_redes_view.php';
 
 ?>

@@ -1,6 +1,6 @@
 <?php
 
-// 1º Utilizador - o Admin - (Apenas para permitir a primeira entrada - O refresh dá erro por ser login "único").
+// 1º Utilizador - o Admin - (Apenas para permitir a primeira entrada - O refresh dá erro por ser login como "único").
 // criarUser("Admin", "admin", "admin");
 
 
@@ -10,7 +10,18 @@ switch($rotas[1]){
     case "":
     case "login": require_once 'Models/Backoffice/Login/login_model.php'; break;
     case "inicio": require_once 'Models/Backoffice/Inicio/inicio_model.php'; break;
-    case "carousel": require_once 'Models/Backoffice/carousel_model.php'; break;
+
+    case "carousel":
+        switch((isset($rotas[2])) ? $rotas[2] : ""){
+
+            case "":
+            case "ver": require_once 'Models/Backoffice/Carousel/carousel_model.php'; break;
+            case "adicionar": require_once 'Models/Backoffice/Carousel/adicionar_carousel_model.php'; break;
+            case "editar": require_once 'Models/Backoffice/Carousel/editar_carousel_model.php'; break;
+            case "apagar": require_once 'Models/Backoffice/Carousel/apagar_carousel_model.php'; break;
+            default: require_once 'Models/Backoffice/Erro/404_model.php'; break;
+        }
+    break;
     
     case "home":
         switch((isset($rotas[2])) ? $rotas[2] : ""){
