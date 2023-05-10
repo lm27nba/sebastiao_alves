@@ -7,7 +7,35 @@ function quantosElementosCarousel(){
 
 // Descarregar os banners relativos a cada página:
 function carouselPorPagina($elementos_por_pagina, $total_a_saltar){
-    return selectSQL("SELECT * FROM carousel ORDER BY id DESC LIMIT $elementos_por_pagina OFFSET $total_a_saltar");
+    return selectSQL("SELECT * FROM carousel LIMIT $elementos_por_pagina OFFSET $total_a_saltar");
+}
+
+// Guardar um novo banner na base de dados:
+function adicionarCarousel($img_desk, $img_mob, $titulo, $subtitulo, $link){
+
+    date_default_timezone_set("Europe/Lisbon");
+    $agora = date("H:i:s - d/m/Y");
+
+    iduSQL("INSERT INTO carousel (img_desk, img_mob, titulo, subtitulo, quando, link) VALUES ('$img_desk', '$img_mob','$titulo', '$subtitulo', '$agora', '$link')");
+}
+
+// Descarregar um banner especifico:
+function retonarBannerEspecifico($id){
+    return selectSQLUnico("SELECT * FROM carousel WHERE id='$id'");
+}
+
+// Guardar as alterações a um banner na base de dados:
+function editarCarousel($id, $img_desk, $img_mob, $titulo, $subtitulo, $link){
+
+    date_default_timezone_set("Europe/Lisbon");
+    $agora = date("H:i:s - d/m/Y");
+
+    iduSQL("UPDATE carousel SET img_desk='$img_desk', img_mob='$img_mob', titulo='$titulo', subtitulo='$subtitulo', quando='$agora', link='$link' WHERE id='$id'");
+}
+
+// Apagar um banner da base de dados:
+function apagarBanner($id){
+    iduSQL("DELETE FROM carousel WHERE id='$id'");
 }
 
 ?>

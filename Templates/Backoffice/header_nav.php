@@ -16,6 +16,9 @@
     <!-- === Link para o CKEditor === -->
     <script src="https://cdn.ckeditor.com/ckeditor5/37.1.0/classic/ckeditor.js"></script>
 
+    <!-- === Link para o Funções JavaScript === -->
+    <script src="<?= $url_base; ?>Public/JavaScript/functions.js"></script>
+
     <!-- === CSS Local === -->
     <link rel="stylesheet" href="<?= $url_base; ?>Public/Css/Backoffice/backoffice.css">
 
