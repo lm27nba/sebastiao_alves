@@ -5,7 +5,7 @@
 
 
 // Derivação das rotas:
-switch($rotas[1]){
+switch((isset($rotas[1])) ? $rotas[1] : ""){
 
     case "":
     case "login": require_once 'Models/Backoffice/Login/login_model.php'; break;

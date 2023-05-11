@@ -1,5 +1,6 @@
 <?php
 
+// Carregar os dados relativos ao Footer:
 $contactos = retornarCampoContactos();
 $redes = retornarCampoRedes();
 
@@ -7,9 +8,7 @@ $redes = retornarCampoRedes();
 
     <footer>
         <div class="container">
-
             <!-- 1ª Linha divisória -->
-
             <div class="row">
 
                 <div class="divisoria-footer col-10 col-md-12 mx-auto"></div>
@@ -17,7 +16,6 @@ $redes = retornarCampoRedes();
             </div>
 
             <!-- Navbar do Footer -->
-
             <div class="row d-none d-md-block">
                              
                 <div class="col-12 p-0">
@@ -27,24 +25,40 @@ $redes = retornarCampoRedes();
                         
                             <div class="collapse navbar-collapse d-block-md px-0" id="navbarNavDropdown">
                                 <ul class="navbar-nav text-uppercase M0 mx-auto gap-2">
+
                                     <li class="nav-item nav-item-footer me-md-3">
-                                        <a class="nav-link py-0 active" aria-current="page" href="<?= $url_base;?>home.html">Home</a>
+                                        <a class="nav-link py-0 <?= ($rotas[0] == "" || $rotas[0] == "home") ? "active" : ""; ?>" 
+                                        aria-current="page" href="<?= $url_base;?>">
+                                            Home
+                                        </a>
                                     </li>
 
                                     <li class="nav-item nav-item-footer me-md-3">
-                                        <a class="nav-link py-0" href="<?= $url_base;?>autor.html">Autor</a>
+                                        <a class="nav-link py-0 <?= ($rotas[0] == "autor") ? "active" : ""; ?>" 
+                                        href="<?= $url_base;?>autor">
+                                            Autor
+                                        </a>
                                     </li>
                                     
                                     <li class="nav-item nav-item-footer me-md-3">
-                                        <a class="nav-link py-0" href="<?= $url_base;?>livros.html">Livros</a>
+                                        <a class="nav-link py-0 <?= ($rotas[0] == "livros") ? "active" : ""; ?>"
+                                        href="#" onclick="aguarde()">
+                                            Livros
+                                        </a>
                                     </li>
 
                                     <li class="nav-item nav-item-footer me-md-3">
-                                        <a class="nav-link py-0" href="<?= $url_base;?>imprensa.html">Imprensa</a>
+                                        <a class="nav-link py-0 <?= ($rotas[0] == "imprensa") ? "active" : ""; ?>" 
+                                        href="<?= $url_base;?>imprensa">
+                                            Imprensa
+                                        </a>
                                     </li>
 
                                     <li class="nav-item nav-item-footer me-md-3">
-                                        <a class="nav-link py-0" href="<?= $url_base;?>contactos.html">Contactos</a>
+                                        <a class="nav-link py-0 <?= ($rotas[0] == "contactos") ? "active" : ""; ?>" 
+                                        href="<?= $url_base;?>contactos">
+                                            Contactos
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -86,18 +100,17 @@ $redes = retornarCampoRedes();
                 </div>
 
                 <div class="col-12 col-md-5 footer-direita">
-
                     <h1 class="titulo-redes-sociais text-center FT1">siga-me nas redes sociais</h1>
 
                     <div class="redes-sociais d-flex justify-content-center">
                         <a href="<?= $redes["instagram"]; ?>">
-                            <img src="<?= $url_base;?>Uploads/Desktop/instagram1.svg" alt="Instagram">
+                            <img src="<?= $url_base;?>Public/Imagens/Redes/instagram1.svg" alt="Instagram">
                         </a>
                         <a href="<?= $redes["facebook"]; ?>">
-                            <img src="<?= $url_base;?>Uploads/Desktop/facebook1.svg" alt="Facebook">
+                            <img src="<?= $url_base;?>Public/Imagens/Redes/facebook1.svg" alt="Facebook">
                         </a>
                         <a href="<?= $redes["linkedin"]; ?>">
-                            <img src="<?= $url_base;?>Uploads/Desktop/linkedin1.svg" alt="Linkedin">
+                            <img src="<?= $url_base;?>Public/Imagens/Redes/linkedin1.svg" alt="Linkedin">
                         </a>
                     </div>
                 </div>
@@ -107,8 +120,8 @@ $redes = retornarCampoRedes();
 
                 <div class="reclamacoes col-12 col-md-6">
                     <div class="d-flex justify-content-center justify-content-md-start">
-                        <img src="<?= $url_base;?>Uploads/Desktop/livroreclamacoes.svg" alt="livro de reclamações">
-                        <img class="ralc"  src="<?= $url_base;?>Uploads/Desktop/ralc.svg" alt="RALC">
+                        <img src="<?= $url_base;?>Public/Imagens/Ralc/livroreclamacoes.svg" alt="livro de reclamações">
+                        <img class="ralc"  src="<?= $url_base;?>Public/Imagens/Ralc/ralc.svg" alt="RALC">
                     </div>
                 </div>
 
@@ -130,6 +143,9 @@ $redes = retornarCampoRedes();
     <!-- === JavaScript Bootstrap === -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+    <!-- === JavaScript Local === -->
+    <script src="<?= $url_base; ?>Public/JavaScript/main.js"></script>
 </body>
 
 </html>

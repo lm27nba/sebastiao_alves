@@ -10,7 +10,7 @@ $id = (empty($rotas[3]))? NULL : intval($rotas[3]);
 
 // Variaveis da página:
 $banner = retonarBannerEspecifico($id);
-$form = isset($_POST["img_desk"]) && isset($_POST["img_mob"]) && isset($_POST["titulo"]) && isset($_POST["subtitulo"]) && isset($_POST["link"]);
+$form = isset($_POST["img_desk"]) && isset($_POST["img_mob"]) && isset($_POST["titulo"]) && isset($_POST["subtitulo"]) && isset($_POST["link"]) && isset($_POST["novidade"]);
 
 // Havendo dados do Formulário:
 if($form){
@@ -20,8 +20,9 @@ if($form){
     $titulo = $_POST["titulo"];
     $subtitulo = $_POST["subtitulo"];
     $link = $_POST["link"];
+    $novidade = $_POST["novidade"];
 
-    editarCarousel($id, $img_desk, $img_mob, $titulo, $subtitulo, $link);
+    editarCarousel($id, $img_desk, $img_mob, $titulo, $subtitulo, $link, $novidade);
     header("Location: " . $url_backoffice. "carousel");
     exit();
 }

@@ -318,7 +318,12 @@
 }
 
 /* *************************************************************************************************************** */
-                                               /* BOTÕES */
+                                               /* GERAIS */
+
+.links{
+    /* Anular os sublinhados dos links */
+    text-decoration: none;
+}
 
 .bem-vindo-botao{
     /* Boas-vindas - Colocar o botão na posição */
@@ -335,7 +340,22 @@
     border: none;
 }
 
+.vermais{
+    /* Botão saber mais */
+    width: 90px;
+    height: 26px;
+    background-color: #b17e3b;
+    color: #fff;
+    border: none;
+    margin: 40px 0px 0px 40px;
+}
+
 .btnsabermais:hover{
+    /* Botão saber mais quando em efeito hover */
+    background-color: #4d4d4d;
+}
+
+.vermais:hover{
     /* Botão saber mais quando em efeito hover */
     background-color: #4d4d4d;
 }

@@ -8,7 +8,7 @@ $user = $_SESSION["usuario"];
 $pagina_atual = (empty($rotas[1]))? NULL : $rotas[1];
 
 // Variaveis da página:
-$form = isset($_POST["img_desk"]) && isset($_POST["img_mob"]) && isset($_POST["titulo"]) && isset($_POST["subtitulo"]) && isset($_POST["link"]);
+$form = isset($_POST["img_desk"]) && isset($_POST["img_mob"]) && isset($_POST["titulo"]) && isset($_POST["subtitulo"]) && isset($_POST["link"]) && isset($_POST["novidade"]);
 
 // Havendo dados do Formulário:
 if($form){
@@ -18,8 +18,9 @@ if($form){
     $titulo = $_POST["titulo"];
     $subtitulo = $_POST["subtitulo"];
     $link = $_POST["link"];
+    $novidade = $_POST["novidade"];
 
-    adicionarCarousel($img_desk, $img_mob, $titulo, $subtitulo, $link);
+    adicionarCarousel($img_desk, $img_mob, $titulo, $subtitulo, $link, $novidade);
     header("Location: " . $url_backoffice. "carousel");
     exit();
 }

@@ -2,7 +2,7 @@
 
     <!-- "Caixa" da página CONTACTOS -->
 
-    <div class="caixa_entrada">     
+    <div id="caixa_entrada">     
         <div class="container-fluid p-0 z-2 position-relative">
             <div class="row offset-0 offset-md-1 p-0" id="caixa_autor">
                 

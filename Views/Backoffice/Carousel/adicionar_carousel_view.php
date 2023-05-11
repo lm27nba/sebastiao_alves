@@ -21,11 +21,22 @@
                         placeholder="Insira o link da imagem para ecrãs de pequenas resoluções (mobile) através do gestor de ficheiros.">
                     </div>  
 
-                    <a target="_blank" class="link" href="<?= $url_base; ?>FileManager/tinyfilemanager.php">
-                        <button class="botaoneutro" type="button">
-                            Gestor Ficheiros
-                        </button>
-                    </a>
+                    <div class="col-11 my-4 d-flex flex-row justify-content-around">
+                        <div class="col-4">
+                            <a target="_blank" class="link" href="<?= $url_base; ?>FileManager/tinyfilemanager.php">
+                                <button class="botaoneutro" type="button">
+                                    Gestor Ficheiros
+                                </button>
+                            </a>
+                        </div>
+                        <div class="col-5 d-flex flex-row justify-content-end">
+                            <label class="texto2 w-100" for="novidade">Destacar o Banner como "NOVIDADE":</label>
+                            <select class="input3" name="novidade" id="novidade">
+                                <option value="false">Não</option>
+                                <option value="true">Sim</option>
+                            </select>
+                        </div>
+                    </div>
 
                     <div class="col-12 mt-4">
                         <label class="texto2 w-100" for="link">Link do banner "Saber Mais":</label>

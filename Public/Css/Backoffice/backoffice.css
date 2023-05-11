@@ -168,7 +168,7 @@ footer{
     text-align: center;
     margin: 0px auto;
 }
-.input1, .input2{
+.input1, .input2, .input3{
     width:  75%;
     height: 30px;
     font-size: 12px;
@@ -177,6 +177,11 @@ footer{
 
 .input2{
     width:  100%;
+}
+
+.input3{
+    width: 20%;
+    padding: 0px 10px;
 }
 
 textarea{
