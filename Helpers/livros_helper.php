@@ -16,12 +16,12 @@ function livrosNavbar(){
 }
 
 // Adicionar um novo livro à base de dados: 
-function adicionarLivro($imagem, $titulo, $texto, $novidade){
+function adicionarLivro($imagem, $titulo, $texto){
 
     date_default_timezone_set("Europe/Lisbon");
     $agora = date("H:i:s - d/m/Y");
 
-    iduSQL("INSERT INTO livros (imagem, titulo, texto, quando, novidade) VALUES ('$imagem', '$titulo', '$texto', '$agora', '$novidade')");
+    iduSQL("INSERT INTO livros (imagem, titulo, texto, quando) VALUES ('$imagem', '$titulo', '$texto', '$agora')");
 }
 
 // Descarregar livro especifico:
@@ -35,12 +35,12 @@ function retonarPartesLivroEspecifico($id){
 }
 
 // Editar um elemento na base de dados: 
-function editarLivro($id, $imagem, $titulo, $texto, $novidade){
+function editarLivro($id, $imagem, $titulo, $texto){
 
     date_default_timezone_set("Europe/Lisbon");
     $agora = date("H:i:s - d/m/Y");
 
-    iduSQL("UPDATE livros SET imagem='$imagem', titulo='$titulo', texto='$texto', quando='$agora' novidade='$novidade' WHERE id='$id'");
+    iduSQL("UPDATE livros SET imagem='$imagem', titulo='$titulo', texto='$texto', quando='$agora' WHERE id='$id'");
 }
 
 // Apagar um livro:

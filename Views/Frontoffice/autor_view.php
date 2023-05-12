@@ -29,7 +29,8 @@
 
                 <div class="col-10 px-0 mx-auto P0 texto_autor"><?= $autor["texto_autor"];?></div>
 
-                <div class="col-10 px-0 py-0 mx-auto voltar-atras-botao d-flex flex-column align-items-center text-center">
+                <div class="col-10 px-0 py-0 mx-auto voltar-atras-botao d-flex flex-column align-items-center
+                 align-items-md-start text-center">
                     <a class="links d-block d-md-none">
                         <button class="vermais B0 btnvoltar">
                             Ver Mais

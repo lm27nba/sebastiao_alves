@@ -191,23 +191,7 @@ $banners = retonarBanners();
                                     <h2 class="banner-titulo py-0 T2"><?= $banner["titulo"]; ?></h2>
                                     <div class="banner-texto P0"><?= $banner["subtitulo"]; ?></div>
                                     <a class="links" href="<?= $banner["link"]; ?>">
-                                        <button class="btnsabermais B0">
-
-                                            <img id="img_sabermais_esp"
-                                            onmouseover="mudarBotaoSM('novo')" onmouseout="mudarBotaoSM('antigo')"
-                                            src="<?= $url_base; ?>Public/Imagens/Utilitarios/sabermais1.svg" alt="botão">
-                                            
-                                            <script>
-                                                function mudarBotaoSM(link){
-                                                    let img = document.getElementById("img_sabermais_esp");
-
-                                                    if(link == "antigo"){
-                                                        img.src = "<?= $url_base; ?>Public/Imagens/Utilitarios/sabermais1.svg";
-                                                    }
-                                                    else{ img.src = "<?= $url_base; ?>Public/Imagens/Utilitarios/sabermais2.svg"; }
-                                                }
-                                            </script>
-                                        </button>
+                                        <button class="btnsabermais B0">Saber Mais</button>
                                     </a>
                                 </div>
                             </div>

@@ -29,20 +29,19 @@
                     <div class="col-12 d-flex flex-column flex-md-row justify-content-center align-items-center gap-5">
                         <div class="col-12 col-md-3 text-center">
                             <h5 class="my-0 T4">telefone</h5>
-                            <p class="my-0 P1 texto-contactos mx-md-auto">+351 123 456 789</p>
+                            <p class="my-0 P1 texto-contactos mx-md-auto"><?= $contactos["telefone"]; ?></p>
                         </div>
 
                         <div class="col-12 col-md-5 text-center">
                             <h5 class="my-0 T4">morada</h5>
                             <p class="my-0 P1 texto-contactos mx-md-auto">
-                                Lorem ipsum dolor sit amet, 16 <br>
-                                1234-543 Lorem
+                                <?= $contactos["morada"]; ?>
                             </p>
                         </div>
 
                         <div class="col-12 col-md-3 text-center">
                             <h5 class="my-0 T4">email</h5>
-                            <p class="my-0 P1 texto-contactos mx-md-auto">lorem@lorem.pt</p>
+                            <p class="my-0 P1 texto-contactos mx-md-auto"><?= $contactos["mail"]; ?></p>
                         </div>
                     </div>
 
@@ -53,7 +52,7 @@
                         <div class="col-6 text-center">
                             <h5 class="my-0 T4">horário</h5>
                             <p class="my-0 P1 texto-contactos mx-md-auto">
-                                De Segunda a Sexta das 00:00h às 00:00h
+                            <?= $contactos["horario"]; ?>
                             </p>
                         </div>
                     </div>
