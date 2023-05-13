@@ -16,8 +16,8 @@
 
     <!-- === CSS Local === -->
 
-    <link rel="stylesheet" href="<?= $url_base; ?>Public/Css/lettering.css">
-    <link rel="stylesheet" href="<?= $url_base; ?>Public/Css/style.css">
+    <link rel="stylesheet" href="<?= $url_base; ?>Public/Css/Frontoffice/lettering.css">
+    <link rel="stylesheet" href="<?= $url_base; ?>Public/Css/Frontoffice/style.css">
 
 </head>
 

@@ -210,6 +210,11 @@
 /* *************************************************************************************************************** */
                                           /* PÁGINA AUTOR */
 
+#caixa_entrada{
+     /* Abrandar o scroll autmomático */
+    scroll-behavior: smooth;
+}
+
 #caixa_autor{
     /* Definir as propriedades gerais da caixa */
     margin-top: -45px;
@@ -257,7 +262,7 @@
 
 .livros{
     /* Relativo à imagem do conteúdo da página */
-    padding: 0px 100px 55px 55px !important;
+    padding: 0px 45px 55px 55px !important;
     max-width: 460px !important;
     max-height: 525px !important;
 }
@@ -297,7 +302,7 @@
     margin: 0px 30px;
 }
 
-.paginas > .active{
+.paginas .active{
     /* Estilo de letras da paginação ativo */ 
     color: #b17e3b;
 }
@@ -318,7 +323,30 @@
 }
 
 /* *************************************************************************************************************** */
-                                               /* BOTÕES */
+                                          /* PÁGINA 404 */
+
+.error_box{
+    border: 2px solid #4d4d4d;
+    background: rgb(120,120,120);
+    background: linear-gradient(0deg, rgba(120,120,120,0.4) 0%, rgba(180,180,180,0.5) 100%);
+    border-radius: 20px;
+    color:  #fff;
+    padding: 30px;
+}
+
+.btn_404{
+    border-radius: 20px;
+    width: 180px;
+    height: 40px;
+}
+
+/* *************************************************************************************************************** */
+                                               /* GERAIS */
+
+.links{
+    /* Anular os sublinhados dos links */
+    text-decoration: none;
+}
 
 .bem-vindo-botao{
     /* Boas-vindas - Colocar o botão na posição */
@@ -335,14 +363,29 @@
     border: none;
 }
 
+.vermais{
+    /* Botão saber mais */
+    width: 90px;
+    height: 26px;
+    background-color: #b17e3b;
+    color: #fff;
+    border: none;
+    margin-top: 40px;
+}
+
 .btnsabermais:hover{
+    /* Botão saber mais quando em efeito hover */
+    background-color: #4d4d4d;
+}
+
+.vermais:hover{
     /* Botão saber mais quando em efeito hover */
     background-color: #4d4d4d;
 }
 
 .btnvoltar{
     /* Página autor - Posicionar o botão */
-    margin: 75px 0px 0px 43px;
+    margin-top: 75px;
 }
 
 .voltar-atras-livros{
@@ -458,6 +501,18 @@
 /* *************************************************************************************************************** */
                                          /* MEDIA QUERY'S */
 
+
+@media all and (max-width: 1100px){
+
+/* *************************************************************************************************************** */
+                               /* ZONA DO CAROUSEL - MENOR QUE 1100 PX */
+
+    .carousel-caption{
+        /* Carousel - Definir o posicionamento das legendas - necessidade especial devido ao espaço. */
+        top: 28%;
+    }
+
+}
     
 @media all and (max-width: 991px){
 
@@ -467,6 +522,11 @@
     .carousel-indicators{
         /* Carousel - Posicionar os indicadores */
         top: 90%;
+    }
+
+    .carousel-caption{
+        /* Carousel - Definir o posicionamento das legendas */
+        top: 28%;
     }
 
 /* *************************************************************************************************************** */
@@ -667,7 +727,7 @@
     }
 
     .btnvoltar{
-        margin: 59px 0px 0px 0px;
+        margin-top: 20px;
     }
 
     .btn-paginacao{

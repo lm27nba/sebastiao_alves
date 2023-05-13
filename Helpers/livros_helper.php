@@ -10,6 +10,11 @@ function livrosPorPagina($elementos_por_pagina, $total_a_saltar){
     return selectSQL("SELECT * FROM livros ORDER BY id DESC LIMIT $elementos_por_pagina OFFSET $total_a_saltar");
 }
 
+// Descarregar os livros:
+function livrosNavbar(){
+    return selectSQL("SELECT id, titulo FROM livros");
+}
+
 // Adicionar um novo livro à base de dados: 
 function adicionarLivro($imagem, $titulo, $texto){
 

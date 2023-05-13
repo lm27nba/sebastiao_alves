@@ -168,7 +168,7 @@ footer{
     text-align: center;
     margin: 0px auto;
 }
-.input1, .input2{
+.input1, .input2, .input3{
     width:  75%;
     height: 30px;
     font-size: 12px;
@@ -179,10 +179,17 @@ footer{
     width:  100%;
 }
 
+.input3{
+    width: 20%;
+    padding: 0px 10px;
+}
+
 textarea{
     width:  100%;
+    min-height: 75px;
     font-size: 12px;
     padding: 0px 20px;
+    resize: none;
 }
 
 hr{

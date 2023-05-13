@@ -23,10 +23,15 @@
                     </div>  
 
                     <div class="col-12 mt-4">
-                        <label class="texto2 w-100" for="titulo">Titulo da Imprensa:</label>  
-
+                        <div class="d-flex flex-row" >
+                            <label class="texto2 w-75" for="titulo">Titulo da Imprensa:</label>  
+                            <label class="texto2 w-25" for="posicao">Posição atribuida na grelha:</label>  
+                        </div>
                         <input class="input1" type="text" name="titulo" required="required" 
                         placeholder="Insira o título da publicação" id="titulo">
+
+                        <input class="input3 text-center" readonly type="number" name="posicao" required="required" 
+                        value="<?= $prox_elem; ?>" id="posicao">
                     </div>
 
                     <div class="col-12 mt-4">
