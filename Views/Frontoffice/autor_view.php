@@ -27,12 +27,19 @@
                     <img id="foto-autor" src="<?= $autor["img_autor"];?>" alt="autor">
                 </div>
 
-                <div class="col-10 px-0 mx-auto P0 texto_autor"><?= $autor["texto_autor"];?></div>
+                <div style="display: block;" class="col-10 px-0 mx-auto P0 texto_autor" id="autor_abreviado">
+                    <?= substr($autor["texto_autor"],0,3000);?>...
+                </div>
+
+                <div style="display: none;" class="col-10 px-0 mx-auto P0 texto_autor" id="autor_completo">
+                    <?= $autor["texto_autor"];?>
+                </div>
 
                 <div class="col-10 px-0 py-0 mx-auto voltar-atras-botao d-flex flex-column align-items-center
                  align-items-md-start text-center">
                     <a class="links d-block d-md-none">
-                        <button class="vermais B0 btnvoltar">
+                        <button style="display:block;" id="btnvermais" class="vermais B0 btnvoltar" 
+                        onmouseover="mostrar_conteudo()">
                             Ver Mais
                         </button>
                     </a>
