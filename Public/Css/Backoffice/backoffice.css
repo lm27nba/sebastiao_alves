@@ -1,0 +1,283 @@
+/* *************************************************************************************************************** */
+                                                    /* GERAIS */
+
+body{
+    /* Definições do BODY */
+    background-color: #c5effc;
+    color: #000;
+    font-family: 'Verdana';
+}
+
+footer{
+    height: 20px;
+}
+
+.caixa{
+    /* Criação da caixa - geral */
+    background-color: #ffffffaa;
+    border: 1px solid #404040;
+    border-radius: 20px;
+    height: auto;
+    text-align: center;
+    margin: 20px auto;
+    padding: 15px;
+    box-shadow: 0px 0px 5px 5px #40404060;
+}
+
+.botao{
+    /* Criação do botão - geral */
+    width: 140px;
+    height: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: none;
+    border-radius: 20px;
+}
+
+.botao{
+     /* Criação do botão - cor */
+    background-color: #4169e1;
+}
+
+.botao2{
+    /* Criação do botão - geral */
+    width: 50px;
+    height: 25px;
+    color: #000;
+    font-weight: bold;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #9db6ff;
+    border: none;
+    border-radius: 50px;
+}
+
+.botao3{
+    /* Criação do botão - geral */
+    width: 300px;
+    height: 35px;
+    color: #bc3efa;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: #86a2f8;
+    border: 2px solid #bc3efa;;
+    border-radius: 20px;
+}
+
+.active{
+    /* Criação do botão quando ativo - geral */
+    background-color: #bc3efa;
+}
+
+.titulo{
+    /* Estética dos titulos - geral */
+    font-size: 30px;
+    font-weight: bold;
+    word-spacing: 10px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.subtitulo, .texto{
+    /* Estética dos subtitulos - geral */
+    font-size: 14px;
+    text-align: center;
+    margin: 10px auto;   
+    font-weight: bold;
+}
+
+.subtitulo{
+    /* Estética propria dos subtitulos - geral */
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.subtitulo1{
+    /* Estética propria dos subtitulos - geral */
+    font-size: 17px;
+    text-transform: capitalize;
+}
+
+.texto1{
+    /* Estética propria dos textos - geral */
+    font-size: 12px;
+    text-align: left;
+    margin: 10px auto;   
+}
+
+.texto2{
+    /* Estética propria dos textos - geral */
+    font-size: 12px;
+    text-align: center;
+    margin: 10px auto;  
+    font-weight: bold; 
+}
+
+.mensagem_erro, .mensagem_sucesso{
+    /* Estética das mensagens - geral */
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;  
+    word-spacing: 10px;
+    margin: 10px auto;
+    padding: 5px 0px;
+    width: 50%;
+    border-radius: 50px;
+}
+
+.mensagem_erro{
+    /* Estética das mensagens de erro - cor */
+    background-color: #ff0000;
+}
+
+.mensagem_sucesso{
+    /* Estética das mensagens de erro - cor */
+    background-color: #005500;
+}
+
+.navbar{
+    /* Criação da NAVBAR - geral */
+    border-top: 2px solid #404040;
+    border-bottom: 2px solid #404040;
+    padding: 25px;
+    margin: 40px auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+}
+
+.formulario, .formulario1{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario{
+    gap: 15px;
+    margin: 10px auto;  
+    width: 50%;
+}
+
+.input{
+    width: 40%;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    margin: 0px auto;
+}
+.input1, .input2, .input3{
+    width:  75%;
+    height: 30px;
+    font-size: 12px;
+    padding: 0px 20px;
+}
+
+.input2{
+    width:  100%;
+}
+
+.input3{
+    width: 20%;
+    padding: 0px 10px;
+}
+
+textarea{
+    width:  100%;
+    min-height: 75px;
+    font-size: 12px;
+    padding: 0px 20px;
+    resize: none;
+}
+
+hr{
+    border: 1px solid #000 !important;
+}
+
+.botaoneutro, .botaook, .botaonok{
+    width: 180px;
+    height: 30px;
+    border: none;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 10px auto;
+    border-radius: 50px;
+}
+
+.botaoneutro{
+    background-color: #404040; 
+}
+
+.botaook{
+    /* Criação do botão ok - cor */
+    background-color: #005500;
+}
+
+.botaonok{
+    /* Criação do botão nok- cor */
+    background-color: #ff0000;
+}
+
+.link{
+    text-decoration: none;
+}
+
+#rota{
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+td, tr, th{
+    border: 1px solid #000;
+    border-collapse: collapse;
+    margin: auto;
+    text-align: center; 
+}
+
+th{
+    height: 25px;
+    text-transform: uppercase;
+}
+
+.primeira_linha{
+    background-color: #909090;
+}
+
+.td_especial{
+    border: none;
+    padding: auto 0px;
+}
+
+.coluna1{
+    width: 150px;
+}
+
+.coluna2{
+    width: 300px;
+}
+
+.coluna3{
+    width: 600px;
+}
+
+.coluna4{
+    width: 220px;
+}
+
+.coluna5{
+    width: 120px;
+}
+
+.mini_banner{
+    max-width: 125px;
+    height: auto;
+}
+
+.imagem_apagar, .imagem_autor{
+    width: 20%;
+    height: auto;
+}
