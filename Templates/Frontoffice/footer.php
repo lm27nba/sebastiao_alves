@@ -120,8 +120,14 @@ $redes = retornarCampoRedes();
 
                 <div class="reclamacoes col-12 col-md-6">
                     <div class="d-flex justify-content-center justify-content-md-start">
-                        <img src="<?= $url_base;?>Public/Imagens/Ralc/livroreclamacoes.svg" alt="livro de reclamações">
-                        <img class="ralc"  src="<?= $url_base;?>Public/Imagens/Ralc/ralc.svg" alt="RALC">
+
+                        <a class="links" href="https://www.livroreclamacoes.pt/Inicio/">
+                            <img src="<?= $url_base;?>Public/Imagens/Ralc/livroreclamacoes.svg" alt="livro de reclamações">
+                        </a>
+
+                        <a class="links" href="https://sebastiaoalves.com/ralc">
+                            <img class="ralc"  src="<?= $url_base;?>Public/Imagens/Ralc/ralc.svg" alt="RALC">
+                        </a>
                     </div>
                 </div>
 

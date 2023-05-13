@@ -302,7 +302,7 @@
     margin: 0px 30px;
 }
 
-.paginas > .active{
+.paginas .active{
     /* Estilo de letras da paginação ativo */ 
     color: #b17e3b;
 }

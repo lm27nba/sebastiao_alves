@@ -16,14 +16,14 @@
                 A página que está a tentar solicitar não está no servidor. O erro pode ocorrer pelos seguintes motivos:
             </div>
 
-            <div class="P1">
+            <div class="P1 mt-4">
                 <ul>
                     <li>Se escreveu o URL diretamente na barra (verifique se a ortografia está correta).</li>
-                    <li>Se clicou num link para chegar até aqui. (possivelmente o link está desatualizado).</li>
+                    <li>Se clicou num link para chegar até aqui (possivelmente o link está desatualizado).</li>
                 </ul>
             </div>
 
-            <div class="T4">
+            <div class="T4 mt-4">
                 O que pode fazer? Sugiro que regresse à página inicial.
             </div>
             

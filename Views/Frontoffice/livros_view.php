@@ -30,8 +30,8 @@
                     <div class="texto-livros P0"><?= $livro["texto"];?></div>
 
                     <div class="voltar-atras-livros">
-                        <a href="<?= $url_base; ?>" class="links">
-                            <button class="btnsabermais B0 btnlivros mx-auto">Voltar Atrás</button>
+                        <a class="links">
+                            <button class="btnsabermais B0 btnlivros mx-auto" onclick="voltar_atras()">Voltar Atrás</button>
                         </a>
                     </div>
                                

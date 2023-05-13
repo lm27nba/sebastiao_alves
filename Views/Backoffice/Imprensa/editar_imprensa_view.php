@@ -45,7 +45,7 @@
                             value="<?= $imprensa["titulo"]; ?>" id="titulo">
 
                             <input class="input3 text-center" type="number" name="posicao" required="required" 
-                            value="<?= $imprensa["posicao"]; ?>" id="posicao">
+                            value="<?= $imprensa["posicao"]; ?>" step="0" min="1" max="<?= intval($pos_max); ?>" id="posicao">
                         </div>
 
                         <div class="col-12 mt-4">

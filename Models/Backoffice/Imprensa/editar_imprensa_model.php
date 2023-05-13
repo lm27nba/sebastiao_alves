@@ -10,6 +10,8 @@ $id = (empty($rotas[3]))? NULL : intval($rotas[3]);
 
 // Variaveis da página:
 $imprensa = retonarPubicacaoEspecifica($id);
+$posicao_antiga = $imprensa["posicao"];
+$pos_max = quantosElementosImprensa();
 $form = isset($_POST["imagem"]) && isset($_POST["titulo"]) && isset($_POST["texto"]) && isset($_POST["quando"]) && isset($_POST["posicao"]);
 
 // Havendo dados do Formulário:
@@ -21,7 +23,12 @@ if($form){
     $quando = $_POST["quando"];
     $posicao = $_POST["posicao"];
 
-    editarPublicacao($id, $imagem, $titulo, $texto, $quando, $posicao);
+    // Guardar os dados que não as posições na base de dados:
+    editarPublicacao($id, $imagem, $titulo, $texto, $quando);
+
+     // Atualizar as posições na grelha:
+    if($posicao != $posicao_antiga){ atualizarPosicoes($id, $posicao,$posicao_antiga); }
+
     header("Location: " . $url_backoffice. "imprensa");
     exit();
 }
