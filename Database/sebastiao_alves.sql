@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 13-Maio-2023 às 10:26
+-- Tempo de geração: 15-Maio-2023 às 18:35
 -- Versão do servidor: 10.4.28-MariaDB
 -- versão do PHP: 8.2.4
 
@@ -55,7 +55,15 @@ INSERT INTO `acessos` (`id`, `entrada`, `id_utilizador`) VALUES
 (15, '08:46:44 - 11/05/2023', 1),
 (16, '13:32:55 - 11/05/2023', 1),
 (17, '22:26:23 - 11/05/2023', 1),
-(18, '08:48:29 - 12/05/2023', 1);
+(18, '08:48:29 - 12/05/2023', 1),
+(19, '13:15:50 - 15/05/2023', 1),
+(20, '16:31:18 - 15/05/2023', 1),
+(21, '16:31:33 - 15/05/2023', 1),
+(22, '17:05:01 - 15/05/2023', 2),
+(23, '17:05:35 - 15/05/2023', 2),
+(24, '17:06:29 - 15/05/2023', 1),
+(25, '17:10:38 - 15/05/2023', 2),
+(26, '17:11:57 - 15/05/2023', 1);
 
 -- --------------------------------------------------------
 
@@ -92,19 +100,18 @@ CREATE TABLE `carousel` (
   `subtitulo` varchar(355) NOT NULL,
   `quando` varchar(50) NOT NULL,
   `link` varchar(200) NOT NULL,
-  `novidade` tinyint(1) NOT NULL DEFAULT 0,
-  `posicao` int(3) NOT NULL
+  `novidade` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Extraindo dados da tabela `carousel`
 --
 
-INSERT INTO `carousel` (`id`, `img_desk`, `img_mob`, `titulo`, `subtitulo`, `quando`, `link`, `novidade`, `posicao`) VALUES
-(1, 'http://localhost/sebastiao_alves/Uploads/Banner/Desktop/cabecalho1.jpg', 'http://localhost/sebastiao_alves/Uploads/Banner/Mobile/cabecalho1.jpg', 'SENHORA DO AMOR E DA GUERRA', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima id, autem quis dolores recusandae sunt quae aut consequatur itaque at accusamus voluptates molestiae fugiat assumenda ducimus veritatis iure soluta praesentium, totam ut? Excepturi ut blanditiis nihil officiis repellendus, sequi natus omnis laboriosam repudiandae pariatur a, ...', '15:24:58 - 10/05/2023', 'http://localhost/sebastiao_alves/livros/1', 1, 1),
-(2, 'http://localhost/sebastiao_alves/Uploads/Banner/Desktop/cabecalho2.jpg', 'http://localhost/sebastiao_alves/Uploads/Banner/Mobile/cabecalho2.jpg', 'O CARACOL ESTRÁBICO', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus obcaecati ut eligendi quis cumque fuga harum reprehenderit eum molestiae omnis rerum? Vel, odio doloremque quae id aliquid accusamus quos soluta minima!', '13:22:31 - 10/05/2023', 'http://localhost/sebastiao_alves/livros/2', 0, 2),
-(3, 'http://localhost/sebastiao_alves/Uploads/Banner/Desktop/cabecalho3.jpg', 'http://localhost/sebastiao_alves/Uploads/Banner/Mobile/cabecalho3.jpg', 'O COLECCIONADOR DE AMNÉSIAS', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus obcaecati ut eligendi quis cumque fuga harum reprehenderit eum molestiae omnis rerum? Vel, odio doloremque quae id aliquid accusamus quos soluta minima!', '13:49:34 - 10/05/2023', 'http://localhost/sebastiao_alves/livros/3', 0, 3),
-(4, 'http://localhost/sebastiao_alves/Uploads/Banner/Desktop/cabecalho4.jpg', 'http://localhost/sebastiao_alves/Uploads/Banner/Mobile/cabecalho4.jpg', 'O VELHO QUE PENSAVA QUE FUGIA', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, similique quasi? Ad quasi quo fugiat corrupti unde earum eius expedita consequatur? Eligendi amet enim animi itaque tempora impedit quas mollitia cum quibusdam ullam, nostrum, sapiente sed eveniet, nemo vero incidunt quisquam accusantium voluptas deserunt voluptate. Adipisci, placeat!...', '13:51:28 - 10/05/2023', 'http://localhost/sebastiao_alves/livros/4', 0, 4);
+INSERT INTO `carousel` (`id`, `img_desk`, `img_mob`, `titulo`, `subtitulo`, `quando`, `link`, `novidade`) VALUES
+(1, 'http://localhost/sebastiao_alves/Uploads/Banner/Desktop/cabecalho1.jpg', 'http://localhost/sebastiao_alves/Uploads/Banner/Mobile/cabecalho1.jpg', 'SENHORA DO AMOR E DA GUERRA', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima id, autem quis dolores recusandae sunt quae aut consequatur itaque at accusamus voluptates molestiae fugiat assumenda ducimus veritatis iure soluta praesentium, totam ut? Excepturi ut blanditiis nihil officiis repellendus, sequi natus omnis laboriosam repudiandae pariatur a, ...', '16:10:40 - 15/05/2023', 'http://localhost/sebastiao_alves/livros/1', 1),
+(2, 'http://localhost/sebastiao_alves/Uploads/Banner/Desktop/cabecalho2.jpg', 'http://localhost/sebastiao_alves/Uploads/Banner/Mobile/cabecalho2.jpg', 'O CARACOL ESTRÁBICO', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus obcaecati ut eligendi quis cumque fuga harum reprehenderit eum molestiae omnis rerum? Vel, odio doloremque quae id aliquid accusamus quos soluta minima!', '16:16:11 - 15/05/2023', 'http://localhost/sebastiao_alves/livros/2', 0),
+(3, 'http://localhost/sebastiao_alves/Uploads/Banner/Desktop/cabecalho3.jpg', 'http://localhost/sebastiao_alves/Uploads/Banner/Mobile/cabecalho3.jpg', 'O COLECCIONADOR DE AMNÉSIAS', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus obcaecati ut eligendi quis cumque fuga harum reprehenderit eum molestiae omnis rerum? Vel, odio doloremque quae id aliquid accusamus quos soluta minima!', '13:49:34 - 10/05/2023', 'http://localhost/sebastiao_alves/livros/3', 0),
+(4, 'http://localhost/sebastiao_alves/Uploads/Banner/Desktop/cabecalho4.jpg', 'http://localhost/sebastiao_alves/Uploads/Banner/Mobile/cabecalho4.jpg', 'O VELHO QUE PENSAVA QUE FUGIA', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, similique quasi? Ad quasi quo fugiat corrupti unde earum eius expedita consequatur? Eligendi amet enim animi itaque tempora impedit quas mollitia cum quibusdam ullam, nostrum, sapiente sed eveniet, nemo vero incidunt quisquam accusantium voluptas deserunt voluptate. Adipisci, placeat!...', '16:16:49 - 15/05/2023', 'http://localhost/sebastiao_alves/livros/4', 0);
 
 -- --------------------------------------------------------
 
@@ -139,6 +146,7 @@ INSERT INTO `contactos` (`id`, `telefone`, `morada`, `mail`, `horario`, `instagr
 CREATE TABLE `destaques` (
   `id` int(11) NOT NULL,
   `destaque` varchar(50) NOT NULL,
+  `estado` varchar(10) NOT NULL,
   `id_livros` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -146,10 +154,10 @@ CREATE TABLE `destaques` (
 -- Extraindo dados da tabela `destaques`
 --
 
-INSERT INTO `destaques` (`id`, `destaque`, `id_livros`) VALUES
-(1, 'NOVIDADE', 1),
-(2, 'MAIS VENDIDO', 4),
-(3, 'EM PROMOÇÃO', 3);
+INSERT INTO `destaques` (`id`, `destaque`, `estado`, `id_livros`) VALUES
+(1, 'NOVIDADE', 'ATIVO', 1),
+(2, 'MAIS VENDIDO', 'ATIVO', 3),
+(3, 'EM PROMOÇÃO', 'ATIVO', 4);
 
 -- --------------------------------------------------------
 
@@ -162,19 +170,19 @@ CREATE TABLE `imprensa` (
   `imagem` varchar(300) NOT NULL,
   `titulo` varchar(150) NOT NULL,
   `texto` longtext NOT NULL,
-  `quando` varchar(100) NOT NULL,
-  `posicao` int(11) NOT NULL
+  `quando` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Extraindo dados da tabela `imprensa`
 --
 
-INSERT INTO `imprensa` (`id`, `imagem`, `titulo`, `texto`, `quando`, `posicao`) VALUES
-(1, 'http://localhost/sebastiao_alves/Uploads/Imprensa/conteudo-imprensa3.jpg', 'LANÇAMENTO DO LIVRO «O COLECCIONADOR DE AMNÉSIAS», DA AUTORIA DE SEBASTIÃO ALVES, QUE CEDEU OS DIREITOS DE AUTOR À ALZHEIMER PORTUGAL', '<p>No próximo dia 21 de Outubro será lançado o livro «O Coleccionador de Amnésias», da autoria de Sebastião Alves, que cedeu os direitos de autor à Alzheimer Portugal?Data 15-10-2014&nbsp;</p><p><br>?No próximo dia 21 de Outubro, pelas 18:00 hrs, no Instituto Superior Técnico em Lisboa, será lançado o livro «O Coleccionador de Amnésias», da autoria de Sebastião Alves, que muito generosamente cedeu à Alzheimer Portugal os direitos de autor. A obra representa bem a realidade de todo o percurso de um Doente de Alzheimer. O interesse do leitor é desde logo conseguido não só pela forma como o autor vai apresentando o Engenheiro Zeferino, uma vez que parte sempre da perspectiva da personagem, mas também por não faltarem os momentos de ternura, os momentos de humor e os momentos de tristeza e solidão.??Não deixe de nos acompanhar neste momento! A Alzheimer Portugal agradece. <a href=\"https://masterprohosting.com/sebastiao_alves//public/uploads/livros/pdf/o%20coleccionador%20de%20amnesias.pdf\">Clique aqui</a> para ler um excerto do livro «O Coleccionador de Amnésias»</p>', 'PUBLICADO A 15 NOVEMBRO 2014', 1),
-(2, 'http://localhost/sebastiao_alves/Uploads/Imprensa/conteudo-imprensa1.jpg', 'LANÇAMENTO | SENHORA DO AMOR E DA GUERRA', '', 'PUBLICADO A 17 JUNHO 2020', 3),
-(3, 'http://localhost/sebastiao_alves/Uploads/Imprensa/conteudo-imprensa2.jpg', 'LANÇAMENTO DO LIVRO', '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, fugit maxime! Nisi eum sunt natus dicta eveniet sit. Consequatur, dolorem! Vitae natus non, adipisci in commodi consectetur aliquid maiores neque eius exercitationem laborum incidunt quibusdam ullam perferendis quaerat animi fugit magnam quasi eaque. Quo aperiam eaque eos illum perspiciatis quia quibusdam minima, sint nulla amet eligendi delectus, rerum, nemo earum voluptas. Voluptatum corrupti consequatur commodi pariatur ratione voluptas suscipit minima nobis dicta! Voluptas quisquam libero inventore facere minima nulla porro recusandae, mollitia, repellendus at alias. Facilis soluta nisi hic quidem rem corrupti expedita optio reiciendis fugiat ad commodi dignissimos, suscipit, exercitationem accusantium eius itaque impedit alias delectus eligendi nobis molestias ab. Harum quaerat exercitationem optio odit molestias itaque dolores, sapiente vel aut tempore maxime in! Veniam dolore similique fugiat vitae non optio libero, labore odio consectetur magni ipsa quibusdam quas earum voluptates nostrum ipsam laborum natus velit consequatur laudantium praesentium. Exercitationem facere unde accusantium quas ipsum error quidem, neque dolores consectetur laborum consequatur natus harum hic, fuga et?</p><p>Ullam a speriores est beatae cumque nemo. Consequatur natus recusandae sed nemo ullam. Quod temporibus, esse molestias, a saepe illum, fugiat quia explicabo repellat quae aperiam laboriosam et quas delectus porro iure impedit?</p>', 'PUBLICADO A 25 SETEMBRO 2021', 4),
-(6, 'http://localhost/sebastiao_alves/Uploads/Imprensa/conteudo-imprensa4.jpg', 'Psychology Now', '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, fugit maxime! Nisi eum sunt natus dicta eveniet sit. Consequatur, dolorem! Vitae natus non, delectus, rerum, nemo earum voluptas. Voluptatum corrupti consequatur commodi pariatur ratione voluptas suscipit minima nobis dicta! Voluptas quisquam libero inventore facere minima nulla porro recusandae, mollitia, repellendus at alias. Facilis soluta nisi hic quidem rem corrupti expedita optio reiciendis fugiat ad commodi dignissimos, suscipit, exercitationem accusantium eius itaque impedit alias delectus eligendi nobis molestias ab. . Exercitationem facere unde accusantium quas ipsum error quidem, neque dolores consectetur laborum consequatur natus harum hic, fuga et?</p><p>Ullam a speriores est beatae cumque nemo. Consequatur natus recusandae sed nemo ullam. Quod temporibus, esse molestias, a saepe illum, fugiat quia explicabo repellat quae aperiam laboriosam et quas delectus porro iure impedit?</p>', 'PUBLICADO A 02 JUNHO 2022', 2);
+INSERT INTO `imprensa` (`id`, `imagem`, `titulo`, `texto`, `quando`) VALUES
+(1, 'http://localhost/sebastiao_alves/Uploads/Imprensa/conteudo-imprensa3.jpg', 'LANÇAMENTO DO LIVRO «O COLECCIONADOR DE AMNÉSIAS», DA AUTORIA DE SEBASTIÃO ALVES', '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolorum ducimus eos commodi laborum iusto et nemo iure ab laboriosam! Eos ea soluta esse neque, ducimus optio! Tempora veritatis aperiam quia asperiores similique laboriosam repudiandae quos repellat. Tempore, sunt quibusdam possimus quam distinctio sit omnis, deserunt nisi consequuntur necessitatibus quae quos suscipit cum magnam.&nbsp;</p><p>Maxime iste ducimus et. Ullam atque autem magni molestiae? Dolorem fugiat porro dolores, corrupti ratione unde numquam inventore eius quis quidem, fugit accusantium eos odit expedita illum commodi quia consectetur ullam rerum laboriosam non eaque qui molestiae? Ullam id commodi adipisci aperiam consequatur repellat quasi dolorum repudiandae aliquid ipsum, ad sed accusantium officiis consectetur, tempora impedit dolorem vero pariatur voluptatum maiores delectus rem fuga quae? Similique libero nesciunt dolorem ut debitis harum dolor eum, voluptatem culpa eaque sunt accusamus dignissimos omnis impedit expedita tempora molestiae iure, at consequatur officia suscipit explicabo accusantium. Ducimus aut odit exercitationem.</p>', '2014-11-15'),
+(2, 'http://localhost/sebastiao_alves/Uploads/Imprensa/conteudo-imprensa1.jpg', 'LANÇAMENTO | SENHORA DO AMOR E DA GUERRA', '', '2020-06-17'),
+(3, 'http://localhost/sebastiao_alves/Uploads/Imprensa/conteudo-imprensa2.jpg', 'LANÇAMENTO DO LIVRO', '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, fugit maxime! Nisi eum sunt natus dicta eveniet sit. Consequatur, dolorem! Vitae natus non, adipisci in commodi consectetur aliquid maiores neque eius exercitationem laborum incidunt quibusdam ullam perferendis quaerat animi fugit magnam quasi eaque. Quo aperiam eaque eos illum perspiciatis quia quibusdam minima, sint nulla amet eligendi delectus, rerum, nemo earum voluptas. Voluptatum corrupti consequatur commodi pariatur ratione voluptas suscipit minima nobis dicta! Voluptas quisquam libero inventore facere minima nulla porro recusandae, mollitia, repellendus at alias. Facilis soluta nisi hic quidem rem corrupti expedita optio reiciendis fugiat ad commodi dignissimos, suscipit, exercitationem accusantium eius itaque impedit alias delectus eligendi nobis molestias ab. Harum quaerat exercitationem optio odit molestias itaque dolores, sapiente vel aut tempore maxime in! Veniam dolore similique fugiat vitae non optio libero, labore odio consectetur magni ipsa quibusdam quas earum voluptates nostrum ipsam laborum natus velit consequatur laudantium praesentium. Exercitationem facere unde accusantium quas ipsum error quidem, neque dolores consectetur laborum consequatur natus harum hic, fuga et?</p><p>Ullam a speriores est beatae cumque nemo. Consequatur natus recusandae sed nemo ullam. Quod temporibus, esse molestias, a saepe illum, fugiat quia explicabo repellat quae aperiam laboriosam et quas delectus porro iure impedit?</p>', '2021-09-21'),
+(6, 'http://localhost/sebastiao_alves/Uploads/Imprensa/conteudo-imprensa4.jpg', 'Psychology Now', '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, fugit maxime! Nisi eum sunt natus dicta eveniet sit. Consequatur, dolorem! Vitae natus non, delectus, rerum, nemo earum voluptas. Voluptatum corrupti consequatur commodi pariatur ratione voluptas suscipit minima nobis dicta! Voluptas quisquam libero inventore facere minima nulla porro recusandae, mollitia, repellendus at alias. Facilis soluta nisi hic quidem rem corrupti expedita optio reiciendis fugiat ad commodi dignissimos, suscipit, exercitationem accusantium eius itaque impedit alias delectus eligendi nobis molestias ab. . Exercitationem facere unde accusantium quas ipsum error quidem, neque dolores consectetur laborum consequatur natus harum hic, fuga et?</p><p>Ullam a speriores est beatae cumque nemo. Consequatur natus recusandae sed nemo ullam. Quod temporibus, esse molestias, a saepe illum, fugiat quia explicabo repellat quae aperiam laboriosam et quas delectus porro iure impedit?</p>', '2022-06-22'),
+(10, 'http://localhost/sebastiao_alves/Uploads/Imprensa/importada.png', 'Sebastião Alves', '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quae ipsam maxime. Ipsam, quae reiciendis delectus similique, saepe eaque expedita nemo magnam sequi asperiores tempore eligendi? Accusantium eligendi fugiat quam, repellat inventore architecto ea provident dignissimos suscipit sed ullam sunt libero corporis vero incidunt fuga harum. Iste deserunt inventore ad ullam omnis voluptatum soluta, natus esse tempora asperiores itaque molestiae ducimus quasi veritatis, architecto dolores corrupti ratione.&nbsp;</p><p>Dolore placeat voluptatem officiis consequatur veritatis odio magnam, quo aperiam quis esse voluptates pariatur ut in sed cupiditate animi? Saepe distinctio officiis, sunt cum fuga, repellat aliquid animi nisi provident ad excepturi repudiandae culpa expedita, suscipit ipsa ab neque! Quis culpa neque doloremque quae officia est repellendus minima veritatis dolor eius nobis ipsum molestias at vitae numquam tempora mollitia nulla nihil omnis quos aspernatur, molestiae natus consectetur porro. Unde praesentium est soluta, id repellat aspernatur repellendus. Delectus, molestiae illum libero enim repellendus eum.</p>', '2022-12-12');
 
 -- --------------------------------------------------------
 
@@ -218,7 +226,8 @@ CREATE TABLE `utilizador` (
 --
 
 INSERT INTO `utilizador` (`id`, `nome`, `login`, `senha`) VALUES
-(1, 'Admin', 'admin', '$2y$10$YF8d1UBiO9ittaNBvKc6Yeqgwz1f/ShhUYUosxKIv3MCVHq49OuxO');
+(1, 'Admin', 'admin', '$2y$10$yxpbvmC/.G7Zq6Ggs.6abuuA9rMRVSh1OUO/jAIzM7iR.wysoERvm'),
+(4, 'Sebastião Alves', 'sebastiao', '$2y$10$ksAV.MQ/ApWd7adEvSPuiuNlW50LNEPh0IAOS7/ZetJnCgXLd.fxm');
 
 --
 -- Índices para tabelas despejadas
@@ -281,7 +290,7 @@ ALTER TABLE `utilizador`
 -- AUTO_INCREMENT de tabela `acessos`
 --
 ALTER TABLE `acessos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT de tabela `autor`
@@ -293,7 +302,7 @@ ALTER TABLE `autor`
 -- AUTO_INCREMENT de tabela `carousel`
 --
 ALTER TABLE `carousel`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de tabela `contactos`
@@ -311,19 +320,19 @@ ALTER TABLE `destaques`
 -- AUTO_INCREMENT de tabela `imprensa`
 --
 ALTER TABLE `imprensa`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de tabela `livros`
 --
 ALTER TABLE `livros`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de tabela `utilizador`
 --
 ALTER TABLE `utilizador`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
