@@ -17,15 +17,16 @@ if(!$id || ($id < 1 || $id > 3)){
 // Variaveis da página:
 $destaque_especifico = destaqueEspecifico($id);
 $lista_livros = retornarListaLivros();
-$form = isset($_POST["livro"]) && isset($_POST["destaque"]);
+$form = isset($_POST["livro"]) && isset($_POST["destaque"]) && isset($_POST["estado"]);
 
 // Havendo dados do Formulário:
 if($form){
 
     $id_livro = $_POST["livro"];
     $destaque = $_POST["destaque"];
+    $estado = $_POST["estado"];
 
-    editarDestaques($id, $destaque, $id_livro);
+    editarDestaques($id, $destaque, $estado, $id_livro);
     header("Location: " . $url_backoffice. "destaques");
     exit();
 }

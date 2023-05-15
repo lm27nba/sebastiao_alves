@@ -1,19 +1,14 @@
 <?php
 
 // Adicionar um novo elemento à base de dados: 
-function adicionarPublicacao($imagem, $titulo, $texto, $quando, $posicao){
+function adicionarPublicacao($imagem, $titulo, $texto, $quando){
     
-    iduSQL("INSERT INTO imprensa (imagem, titulo, texto, quando, posicao) VALUES ('$imagem', '$titulo', '$texto', '$quando'. '$posicao')");
+    iduSQL("INSERT INTO imprensa (imagem, titulo, texto, quando) VALUES ('$imagem', '$titulo', '$texto', '$quando')");
 }
 
 // Saber quantos elementos tenho na base de dados da imprensa:
 function quantosElementosImprensa(){
     return selectSQLUnico("SELECT Count(*) AS total FROM imprensa")["total"];
-}
-
-// Descarregar a imprensa por páginas:
-function imprensaPorPagina($elementos_por_pagina, $total_a_saltar){
-    return selectSQL("SELECT * FROM imprensa ORDER BY id DESC LIMIT $elementos_por_pagina OFFSET $total_a_saltar");
 }
 
 // Descarregar publicação especifica:
@@ -37,27 +32,18 @@ function editarPublicacao($id, $imagem, $titulo, $texto, $quando){
     iduSQL("UPDATE imprensa SET imagem='$imagem', titulo='$titulo', texto='$texto', quando='$quando' WHERE id='$id'");
 }
 
-// Atualizar as posições dos elementos guardados para apresentação futura: 
-function atualizarPosicoes($id, $posicao,$posicao_antiga){
-    
-    $posicao_nova = intval($posicao);
-    $posicao_antiga = intval($posicao_antiga);
+// Apresentar a data nos moldes pretendidos: 
 
-    iduSQL("UPDATE imprensa SET posicao='$posicao_nova' WHERE id='$id'");
+function devolverData($quando){
 
-    if($posicao_nova < $posicao_antiga){
-
-        iduSQL("UPDATE imprensa SET posicao = posicao + 1 WHERE posicao >= '$posicao_nova' AND id != '$id' AND posicao <= '$posicao_antiga'");
-    }
-
-    else{
-        iduSQL("UPDATE imprensa SET posicao = posicao - 1 WHERE posicao > $posicao_antiga AND posicao <= $posicao_nova AND id != $id");
-    }
+    setlocale(LC_TIME, 'pt_pt', 'pt_pt.utf-8', 'portuguese');
+    $data_formatada = strftime('%d %B %Y', strtotime($quando));
+    return "Publicado a " .$data_formatada;
 }
 
-// Descarregar a imprensa por ordem das posições:
-function descarregarPorPosicao($elementos_por_pagina, $total_a_saltar){
-    return selectSQL("SELECT * FROM imprensa ORDER BY posicao ASC LIMIT $elementos_por_pagina OFFSET $total_a_saltar");
+// Descarregar a imprensa por Id:
+function descarregarPorId($elementos_por_pagina, $total_a_saltar){
+    return selectSQL("SELECT * FROM imprensa ORDER BY id DESC LIMIT $elementos_por_pagina OFFSET $total_a_saltar");
 }
 
 ?>

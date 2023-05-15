@@ -18,7 +18,7 @@ if($form){
     $titulo = $_POST["titulo"];
     $subtitulo = $_POST["subtitulo"];
     $link = $_POST["link"];
-    $novidade = $_POST["novidade"];
+    $novidade = ($_POST["novidade"] == "true") ? "1" : "0";
 
     adicionarCarousel($img_desk, $img_mob, $titulo, $subtitulo, $link, $novidade);
     header("Location: " . $url_backoffice. "carousel");

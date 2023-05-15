@@ -36,7 +36,7 @@
                             <div class="col-10 mx-auto separador-noticias"></div>
 
                             <div class="col-10 mx-auto P2 text-end">
-                                <?= $i["quando"]; ?>
+                                <?= devolverData($i["quando"]); ?>
                             </div>
 
                             <div class="col-10 mx-auto mt-5">
@@ -46,13 +46,11 @@
                             <div class="texto-noticia col-10 mx-auto mt-5">
                                 <?= $i["texto"]; ?>
                             </div>
-
                         </div>          
                     </div>
                 </div>
                 <?php ($x != 2) ? $x++ : $x=1; ?>
             <?php endforeach; ?>
-
 
             <div class="row p-0 m-0">
 
@@ -62,8 +60,13 @@
                         <a class="link" 
                         href="<?= ($pag > 1) ? $url_base. "imprensa/" .($pag-1) : $url_base. "imprensa/1"; ?>">
                             <button class="p-0 btn-paginacao me-2" name="pag" value="<?= ($pag > 1) ? ($pag-1) : 1; ?>"
-                            <?= ($pag <= 1) ? "disabled" : ""; ?> style="display: <?= ($pag <= 1) ? "none" : ""; ?>;">
-                                <img src="<?= $url_base;?>Public/Imagens/Utilitarios/setaesquerda1.svg" alt="anterior">
+                            <?= ($pag <= 1) ? "disabled" : ""; ?> onmouseover="trocarseta()" onmouseout="voltarseta()">
+
+                                <img style="display: block;" id="setaesq" alt="anterior"
+                                src="<?= $url_base;?>Public/Imagens/Utilitarios/setaesquerda1.svg">
+
+                                <img style="display: none;" id="setaesq1" alt="anterior"
+                                src="<?= $url_base;?>Public/Imagens/Utilitarios/setaesquerda2.svg">
                             </button>
                         </a>
 
@@ -76,14 +79,19 @@
                                         <?= $i; ?>
                                     </button>
                                 </a>
-
                             <?php endfor; ?>
                         </div>
 
                         <a class="link" href="<?= ($pag < $pag_necessarias) ? $url_base. "imprensa/" .($pag +1) : $url_base. "imprensa/" .$pag_necessarias; ?>">
-                            <button class="p-0 btn-paginacao ms-2" name="pag" style="display: <?= ($pag >= $pag_necessarias) ? "none" : ""; ?>;" 
-                            value="<?= ($pag < $pag_necessarias) ? ($pag +1) : $pag_necessarias; ?>" <?= ($pag >= $pag_necessarias) ? "disabled" : ""; ?>>
-                                <img src="<?= $url_base;?>Public/Imagens/Utilitarios/setadireita1.svg" alt="anterior">
+                            <button class="p-0 btn-paginacao ms-2" name="pag" <?= ($pag >= $pag_necessarias) ? "disabled" : ""; ?>
+                            value="<?= ($pag < $pag_necessarias) ? ($pag +1) : $pag_necessarias; ?>" 
+                            onmouseover="trocarseta1()" onmouseout="voltarseta1()">
+
+                                <img style="display: block;" alt="avançar" id="setadir"
+                                src="<?= $url_base;?>Public/Imagens/Utilitarios/setadireita1.svg">
+
+                                <img style="display: none;" alt="avançar" id="setadir1"
+                                src="<?= $url_base;?>Public/Imagens/Utilitarios/setadireita2.svg">
                             </button>
                         </a>
                     </div>

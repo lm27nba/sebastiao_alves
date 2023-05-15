@@ -1,7 +1,7 @@
 <?php
 
 // 1º Utilizador - o Admin - (Apenas para permitir a primeira entrada - O refresh dá erro por ser login como "único").
-// criarUser("Admin", "admin", "admin");
+// criarUser("Sebastião Alves", "sebastiao", "teste");
 
 
 // Derivação das rotas:

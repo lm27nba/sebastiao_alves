@@ -12,8 +12,9 @@
                 <table class=" mx-auto">
                     <tr class="primeira_linha">
                         <th class="coluna1">imagem</th>
-                        <th class="coluna2">título</th>
-                        <th class="coluna3">categoria</th>
+                        <th class="coluna3">título</th>
+                        <th class="coluna2">categoria</th>
+                        <th class="coluna4">estado</th>
                         <th class="coluna5">acções</th>
                     </tr>
 
@@ -23,7 +24,8 @@
 
                             <td><img class="mini_banner" src="<?= $livro["imagem"];?>" alt="mini"></td>
                             <td><?= $livro["titulo"];?></td>
-                            <td><?= $d["destaque"];?></td>                              
+                            <td><?= $d["destaque"];?></td>  
+                            <td><?= $d["estado"];?></td>                            
                             
                             <td class="td_especial">
                                 <a class="link" 

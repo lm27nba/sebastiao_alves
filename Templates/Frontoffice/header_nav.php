@@ -43,15 +43,20 @@ $banners = retonarBanners();
 
             <div class="col-12 d-flex justify-content-around justify-content-md-center z-1 p-0">
                 
+                <!-- Titulo. -->
                 <div class="row T0">Sebastião Alves</div>
 
+                <!-- Botão da nav-bar em ecrãs pequenos. -->
                 <div class="row">
                     <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" 
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" 
-                    aria-label="Toggle navigation" id="btn_nav">
+                    aria-label="Toggle navigation" id="btn_nav" onclick="trocarBotaoNav()">
 
-                        <img onclick="trocarBotao()" class="menu-botao" id="btn_nav_img" alt="Botão Menu"
+                        <img style="display:block;" class="menu-botao" id="btn_nav_menu" alt="Botão Menu"
                         src="<?= $url_base;?>Public/Imagens/Utilitarios/menu.svg">
+
+                        <img style="display:none;" class="menu-botao" id="btn_nav_fechar" alt="Botão Menu"
+                        src="<?= $url_base;?>Public/Imagens/Utilitarios/fechar.svg">
                     </button>
                 </div>
             </div>

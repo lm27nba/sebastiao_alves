@@ -34,7 +34,7 @@
         </div>
     </div>
 
-    <!-- Resto do main - Últimos Livros, texto e cartas -->
+    <!-- Últimos Livros -->
 
     <div id="zona-conteudo mx-auto" class="container">
     
@@ -49,27 +49,29 @@
 
         <!-- Livros em Miniaturas -->
 
-        <div class="row">
-            <div  id="destaques" class="col-12 d-flex flex-wrap justify-content-center justify-content-md-around">
-                <?php foreach($destaques as $key =>$dest): ?>
-                    <?php $livro = retonarLivroEspecifico($dest["id_livros"]); ?>
-                    
-                    <div class="col-3 card">
-                        <img src="<?= $livro["imagem"];?>" class="card-img-top" alt="destaque<?= $key; ?>">
+        <?php if(!empty($destaques)): ?>
+            <div class="row">
+                <div  id="destaques" class="col-12 d-flex flex-wrap justify-content-center justify-content-md-around">
+                    <?php foreach($destaques as $key =>$dest): ?>
+                        <?php $livro = retonarLivroEspecifico($dest["id_livros"]); ?>
+                        
+                        <div class="col-3 card">
+                            <img src="<?= $livro["imagem"];?>" class="card-img-top" alt="destaque<?= $key; ?>">
 
-                        <div class="card-body">
-                            <h5 class="card-title T1Esp my-0"><?= $livro["titulo"];?></h5>
-                            <h6 class="card-category SM0 my-0"><?= $dest["destaque"];?></h6>
-                            <div class="card-text P0 my-0"><?= substr($livro["texto"], 0, 150);?>...</div>
+                            <div class="card-body">
+                                <h5 class="card-title T1Esp my-0"><?= $livro["titulo"];?></h5>
+                                <h6 class="card-category SM0 my-0"><?= $dest["destaque"];?></h6>
+                                <div class="card-text P0 my-0"><?= substr($livro["texto"], 0, 150);?>...</div>
 
-                            <a href="<?= $url_base; ?>livros/<?= $dest["id_livros"];?>" 
-                            class="d-flex justify-content-end text-decoration-none">
-                                <button class="btnsabermais card-button B0">saber mais</button>        
-                            </a>
-                        </div>
-                    </div>  
-                <?php endforeach; ?>
+                                <a href="<?= $url_base; ?>livros/<?= $dest["id_livros"];?>" 
+                                class="d-flex justify-content-end text-decoration-none">
+                                    <button class="btnsabermais card-button B0">saber mais</button>        
+                                </a>
+                            </div>
+                        </div>  
+                    <?php endforeach; ?>
+                </div>
             </div>
-        </div>
+        <?php endif; ?>
     </div>
 </main>

@@ -50,6 +50,11 @@ function apagarLivro($id){
 
 // Descarregar os livros em destaques:
 function livrosEmDestaque(){
+    return selectSQL("SELECT * FROM destaques WHERE estado='ATIVO'");
+}
+
+// Descarregar osdiversos destaques:
+function destaquesDiversos(){
     return selectSQL("SELECT * FROM destaques");
 }
 
@@ -64,9 +69,9 @@ function retornarListaLivros(){
 }
 
 // Editar os destaques na base de dados:
-function editarDestaques($id, $destaque, $id_livro){
+function editarDestaques($id, $destaque, $estado, $id_livro){
 
-    iduSQL("UPDATE destaques SET destaque='$destaque', id_livros='$id_livro' WHERE id='$id'");
+    iduSQL("UPDATE destaques SET destaque='$destaque', estado='$estado', id_livros='$id_livro' WHERE id='$id'");
 }
 
 ?>

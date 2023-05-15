@@ -10,6 +10,7 @@
                 <div class="col-10 mx-auto">
 
                     <div class="col-12 mt-4">
+                    <label class="texto2 w-100" for="livro">Escolha o livro a destacar:</label>
                         <select name="livro" id="livro" class="input">
 
                             <?php foreach($lista_livros as $l): ?>
@@ -24,6 +25,16 @@
 
                         <input class="input" type="text" name="destaque" required="required" 
                         value="<?= $destaque_especifico["destaque"]; ?>" id="destaque">
+                    </div>
+
+                    <div class="col-12 mt-4">
+                        <label class="texto2 w-100" for="estado">Estado do destaque:</label>  
+
+                        <select name="estado" id="estado" class="input">
+           
+                            <option value="ATIVO">Ativo</option>    
+                            <option value="INATIVO">Inativo</option> 
+                        </select>
                     </div>
                 </div>
 

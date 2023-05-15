@@ -23,15 +23,11 @@
                     </div>  
 
                     <div class="col-12 mt-4">
-                        <div class="d-flex flex-row" >
-                            <label class="texto2 w-75" for="titulo">Titulo da Imprensa:</label>  
-                            <label class="texto2 w-25" for="posicao">Posição atribuida na grelha:</label>  
-                        </div>
+                        
+                        <label class="texto2 w-75" for="titulo">Titulo da Imprensa:</label>  
+
                         <input class="input1" type="text" name="titulo" required="required" 
                         placeholder="Insira o título da publicação" id="titulo">
-
-                        <input class="input3 text-center" readonly type="number" name="posicao" required="required" 
-                        value="<?= $prox_elem; ?>" id="posicao">
                     </div>
 
                     <div class="col-12 mt-4">
@@ -51,8 +47,8 @@
                     <div class="col-12 mt-4">
                         <label class="texto2 w-100" for="quando">Data da publicação na imprensa:</label>
 
-                        <input class="input1" type="text" name="quando" id="quando" required="required" 
-                        value="PUBLICADO A ">
+                        <input class="input3" type="date" name="quando" id="quando" required="required" 
+                        Placeholder="PUBLICADO A ">
                     </div>
                 </div>
 

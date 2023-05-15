@@ -8,8 +8,7 @@ $user = $_SESSION["usuario"];
 $pagina_atual = (empty($rotas[1]))? NULL : $rotas[1];
 
 // Variaveis da página:
-$prox_elem = intval(quantosElementosImprensa())+1;
-$form = isset($_POST["imagem"]) && isset($_POST["titulo"]) && isset($_POST["texto"]) && isset($_POST["quando"]) && isset($_POST["posicao"]);
+$form = isset($_POST["imagem"]) && isset($_POST["titulo"]) && isset($_POST["texto"]) && isset($_POST["quando"]);
 
 // Havendo dados do Formulário:
 if($form){
@@ -18,9 +17,8 @@ if($form){
     $titulo = $_POST["titulo"];
     $texto = $_POST["texto"];
     $quando = $_POST["quando"];
-    $posicao = $_POST["posicao"];
 
-    adicionarPublicacao($imagem, $titulo, $texto, $quando, $posicao);
+    adicionarPublicacao($imagem, $titulo, $texto, $quando);
     header("Location: " . $url_backoffice. "imprensa");
     exit();
 }

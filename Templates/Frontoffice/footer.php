@@ -71,45 +71,73 @@ $redes = retornarCampoRedes();
             </div>
         </div>
 
-        <!-- Contactos, Links e Direitos -->
         <div class="container">
             <div class="row d-flex justify-content-md-center">
 
-                <div class="col-12 col-md-6 text-center text-md-start footer-esquerda">
+                <!-- Contactos em Mobile-->
+                <?php if($pagina_atual != "contactos"): ?>
+                    <div class="d-block d-md-none col-12 col-md-6 text-center text-md-start footer-esquerda">
 
-                    <h1 class="titulo-contactos FT1">contactos</h1>
+                        <h1 class="titulo-contactos FT1">contactos</h1>
 
-                    <div class="d-flex justify-content-md-start align-content-md-start contactos">
-                        <div class="col-12 col-md-5 morada">
-                            <h5 class="my-0 T4">morada</h5>
-                            <p class="my-0 P1 texto-contactos">
-                                <?= $contactos["morada"]; ?>
-                            </p>
-                        </div>
+                        <div class="d-flex justify-content-md-start align-content-md-start contactos">
+                            <div class="col-12 col-md-5 morada">
+                                <h5 class="my-0 T4">morada</h5>
+                                <p class="my-0 P1 texto-contactos">
+                                    <?= $contactos["morada"]; ?>
+                                </p>
+                            </div>
 
-                        <div class="col-12 col-md-4 ms-md-3 telefone">
-                            <h5 class="my-0 T4">telefone</h5>
-                            <p class="my-0 P1 texto-contactos"> <?= $contactos["telefone"]; ?></p>
-                        </div>
+                            <div class="col-12 col-md-4 ms-md-3 telefone">
+                                <h5 class="my-0 T4">telefone</h5>
+                                <p class="my-0 P1 texto-contactos"> <?= $contactos["telefone"]; ?></p>
+                            </div>
 
-                        <div class="col-12 col-md-3 mail">
-                            <h5 class="my-0 T4">email</h5>
-                            <p class="my-0 P1 texto-contactos"> <?= $contactos["mail"]; ?></p>
+                            <div class="col-12 col-md-3 mail">
+                                <h5 class="my-0 T4">email</h5>
+                                <p class="my-0 P1 texto-contactos"> <?= $contactos["mail"]; ?></p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                <?php endif; ?>
 
+                <!-- Contactos em Desktop-->
+                <div class="d-none d-md-block col-12 col-md-6 text-center text-md-start footer-esquerda">
+
+                        <h1 class="titulo-contactos FT1">contactos</h1>
+
+                        <div class="d-flex justify-content-md-start align-content-md-start contactos">
+                            <div class="col-12 col-md-5 morada">
+                                <h5 class="my-0 T4">morada</h5>
+                                <p class="my-0 P1 texto-contactos">
+                                    <?= $contactos["morada"]; ?>
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-md-4 ms-md-3 telefone">
+                                <h5 class="my-0 T4">telefone</h5>
+                                <p class="my-0 P1 texto-contactos"> <?= $contactos["telefone"]; ?></p>
+                            </div>
+
+                            <div class="col-12 col-md-3 mail">
+                                <h5 class="my-0 T4">email</h5>
+                                <p class="my-0 P1 texto-contactos"> <?= $contactos["mail"]; ?></p>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- Links das Redes Sociais -->
                 <div class="col-12 col-md-5 footer-direita">
                     <h1 class="titulo-redes-sociais text-center FT1">siga-me nas redes sociais</h1>
 
                     <div class="redes-sociais d-flex justify-content-center">
-                        <a href="<?= $redes["instagram"]; ?>">
+                        <a target="_blank" href="<?= $redes["instagram"]; ?>">
                             <img src="<?= $url_base;?>Public/Imagens/Redes/instagram1.svg" alt="Instagram">
                         </a>
-                        <a href="<?= $redes["facebook"]; ?>">
+                        <a target="_blank" href="<?= $redes["facebook"]; ?>">
                             <img src="<?= $url_base;?>Public/Imagens/Redes/facebook1.svg" alt="Facebook">
                         </a>
-                        <a href="<?= $redes["linkedin"]; ?>">
+                        <a target="_blank" href="<?= $redes["linkedin"]; ?>">
                             <img src="<?= $url_base;?>Public/Imagens/Redes/linkedin1.svg" alt="Linkedin">
                         </a>
                     </div>
@@ -118,20 +146,22 @@ $redes = retornarCampoRedes();
 
             <div class="row d-flex justify-content-md-center">
 
+                <!-- Livro de Raclamações -->
                 <div class="reclamacoes col-12 col-md-6">
                     <div class="d-flex justify-content-center justify-content-md-start">
 
-                        <a class="links" href="https://www.livroreclamacoes.pt/Inicio/">
+                        <a target="_blank" class="links" href="https://www.livroreclamacoes.pt/Inicio/">
                             <img src="<?= $url_base;?>Public/Imagens/Ralc/livroreclamacoes.svg" alt="livro de reclamações">
                         </a>
 
-                        <a class="links" href="https://sebastiaoalves.com/ralc">
+                        <a target="_blank" class="links" href="https://sebastiaoalves.com/ralc">
                             <img class="ralc"  src="<?= $url_base;?>Public/Imagens/Ralc/ralc.svg" alt="RALC">
                         </a>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-5 direitos">
+                    <!-- Direitos -->
                     <div>
                         <p class="P0 text-center">
                             Politica de Cookies. 

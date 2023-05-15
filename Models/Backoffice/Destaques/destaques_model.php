@@ -8,7 +8,7 @@ $user = $_SESSION["usuario"];
 $pagina_atual = (empty($rotas[1]))? NULL : $rotas[1];
 
 // Variaveis da página:
-$destaques = livrosEmDestaque();
+$destaques = destaquesDiversos();
 $livro;
 
 // Carregamento dos "fragmentos" que constroem a página:

@@ -24,7 +24,7 @@
                             <td><img class="mini_banner" src="<?= $i["imagem"];?>" alt="mini"></td>
                             <td><?= $i["titulo"];?></td>
                             <td><?= substr($i["texto"], 0, 100);?>...</td>
-                            <td><?= $i["quando"];?></td>                              
+                            <td class="text-uppercase fs-6"><?= devolverData($i["quando"]);?></td>                              
                             
                             <td class="td_especial">
                                 <a class="link" href="<?= $url_backoffice. "imprensa/editar/". $i["id"]; ?>">Editar</a>

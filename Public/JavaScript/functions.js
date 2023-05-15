@@ -23,6 +23,7 @@ function voltar_atras(){ window.history.back(); }
 function scrollInicial(){
 
     let scroll_inicial = document.getElementById("caixa_entrada");
+    
     scroll_inicial.scrollIntoView();
 }
 
@@ -33,7 +34,7 @@ function mostrar_conteudo(){
     let div_nova = document.getElementById("autor_completo");
     let botao = document.getElementById("btnvermais");
 
-    div.setAttribute("style", "display:none;");
-    div_nova.setAttribute("style", "display:block;");
-    botao.setAttribute("style", "display:none;");
+    div.style.display = "none";
+    div_nova.style.display = "block";
+    botao.style.display = "none";
 }

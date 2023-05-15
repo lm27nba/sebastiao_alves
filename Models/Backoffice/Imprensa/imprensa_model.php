@@ -16,7 +16,7 @@ $total_elementos = quantosElementosImprensa();
 $elementos_por_pagina = 3;
 $pag_necessarias = ceil($total_elementos/ $elementos_por_pagina);
 $total_a_saltar = ($pag-1)*$elementos_por_pagina;
-$imprensa = imprensaPorPagina($elementos_por_pagina, $total_a_saltar);
+$imprensa = descarregarPorId($elementos_por_pagina, $total_a_saltar);
 
 // Carregamento dos "fragmentos" que constroem a página:
 require 'Templates/Backoffice/header_nav.php';
