@@ -32,6 +32,10 @@
     -1px -1px 10px -5px #707070 !important;
 }
 
+.dropdown-menu > li > .active{
+    color: #b47d33 !important;
+}
+
 .dropdown-item{
     /* Nav-bar - Submenus */
     background-color: transparent !important;

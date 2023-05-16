@@ -96,7 +96,7 @@ $banners = retonarBanners();
                                     <ul class="dropdown-menu SM1">
                                         <?php foreach($livros as $l): ?>
                                             <li>
-                                                <a class="dropdown-item <?= ($rotas[0] == "livro" && $rotas[1] == $l["id"]) ? "active" : ""; ?>" 
+                                                <a class="dropdown-item <?= ($rotas[0] == "livros" && $rotas[1] == $l["id"]) ? "active" : ""; ?>" 
                                                 href="<?= $url_base;?>livros/<?= $l["id"]; ?>">
                                                     <?= $l["titulo"]; ?>
                                                 </a>
