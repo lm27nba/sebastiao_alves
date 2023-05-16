@@ -21,9 +21,9 @@ Apenas estou a dizer isto porque tentei importar e só consegui que carregasse a
 
 
 3º ->
-- Há 2 utilizadores registados com senha encriptografada. São eles:
+- Há 2 utilizadores registados como pedido com senha encriptografada. São eles:
 
-- O Admin usado no desenvolvimento de todo o site que tem alguns movimentos já associados para testes.  
+- O Admin usado no desenvolvimento de todo o site.  
 Login: admin
 Senha: admin
 
