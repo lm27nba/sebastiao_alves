@@ -14,6 +14,12 @@ $pag_necessarias = ceil($total_elementos/ $elementos_por_pagina);
 $total_a_saltar = ($pag-1)*$elementos_por_pagina;
 $imprensa = descarregarPorId($elementos_por_pagina, $total_a_saltar);
 
+// No caso de não haver imprensa (página digitada manualmente):
+if(!$imprensa){
+    header("Location: " .$url_base. "404");
+    exit();
+}
+
 // Carregamento dos "fragmentos" que constroem a página:
 require 'Templates/Frontoffice/header_nav.php';
 require 'Views/Frontoffice/imprensa_view.php';

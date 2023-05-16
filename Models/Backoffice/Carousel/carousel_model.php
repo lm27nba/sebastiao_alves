@@ -34,6 +34,7 @@ if(!$carousel){
     header("Location: ".$url_backoffice."carousel/ver/".$mostrar."/1");
     exit();
 }
+
 // Carregamento dos "fragmentos" que constroem a página:
 require 'Templates/Backoffice/header_nav.php';
 require 'Views/Backoffice/Carousel/carousel_view.php';
