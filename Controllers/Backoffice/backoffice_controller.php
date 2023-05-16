@@ -1,7 +1,11 @@
 <?php
 
-// 1º Utilizador - o Admin - (Apenas para permitir a primeira entrada - O refresh dá erro por ser login como "único").
-// criarUser("Sebastião Alves", "sebastiao", "teste");
+/*
+Como não foi pedido uma opção para criar utilizadores a função que se segue é para os poder criar.
+Tem que estar comentada para não entrar em conflito pois o login é algo definido como unico na base de dados.
+*/
+
+// criarUser("Admin", "admin", "admin");
 
 
 // Derivação das rotas:
